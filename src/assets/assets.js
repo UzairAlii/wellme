@@ -1,9 +1,11 @@
 import bigLogoIcon from './images/bigLogoIcons.jpg'
 import brownLogo from './images/brownLogo.png'
+import howItWorkImg from './images/howItWorkImg.png'
 import cancel from './images/cancel.png'
 import bars from './images/bars.png'
 import ceo from './images/ceo.jpg'
 import coFounder from './images/co-founder.jpg'
+import line from './images/line.jpg'
 import forRestaurants from './images/forRestaurants.jpg'
 import forPartners from './images/forPartners.jpg'
 import gredientBg from './images/gredient-bg.jpg'
@@ -43,8 +45,10 @@ import smallLogo from './images/smallLogo.jpg'
 
 export const Images = {
     bigLogoIcon,
+    line,
     brownLogo,
     cancel,
+    howItWorkImg,
     bars,
     ceo,
     coFounder,
