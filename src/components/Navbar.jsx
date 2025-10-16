@@ -60,7 +60,17 @@ const Navbar = () => {
             </div>
           </Link>
           <div className='flex items-center'>
-            <button onClick={() => handleGetStartedClick('forPartnersAndRestaurants')} className='bg-[#c28347] rounded-full py-2 px-4 text-white text-sm font-semibold'>Get Started</button>
+            <button
+              onClick={() => {
+                const section = document.getElementById('forPartnersAndRestaurants');
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className='bg-[#c28347] rounded-full py-2 px-4 text-white text-sm font-semibold cursor-pointer hover:bg-[#bf7836]'
+            >
+              Get Started
+            </button>
             <button
               className='ml-2 flex flex-col justify-center items-center w-10 h-10'
               onClick={() => setMenuOpen(true)}
