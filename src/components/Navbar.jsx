@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Images } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -25,15 +25,24 @@ const Navbar = () => {
       <div className='h-[13vh] w-full flex items-center justify-center px-4 lg:px-10 relative'>
         {/* Desktop/Tablet Navbar */}
         <div className='hidden lg:flex w-[65%] bg-[#c6d1ed]/40 backdrop-blur-md shadow-sm rounded-full py-2 pl-5 pr-2 items-center justify-between'>
-          <Link to={'/'}>
+          <NavLink to={'/'}>
             <div className="logo">
               <img className='w-14' src={Images.logo} alt="" />
             </div>
-          </Link>
+          </NavLink>
           <ul className='flex items-center gap-5 font-semibold'>
-            <Link to={"/Partners"}><li className='transition hover:text-[#c28347]'>Partners</li></Link>
-            <Link to={"/Restaurants"}><li className='transition hover:text-[#c28347]'>Restaurants</li></Link>
-            <Link to={"/About"}><li className='transition hover:text-[#c28347]'>About</li></Link>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347]" : "text-[#111]"
+            } to={"/"}><li className='transition hover:text-[#c28347]'>Home</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347]" : "text-[#111]"
+            } to={"/Partners"}><li className='transition hover:text-[#c28347]'>Partners</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347]" : "text-[#111]"
+            } to={"/Restaurants"}><li className='transition hover:text-[#c28347]'>Restaurants</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347]" : "text-[#111]"
+            } to={"/About"}><li className='transition hover:text-[#c28347]'>About</li></NavLink>
           </ul>
           <button
             onClick={() => {
@@ -54,11 +63,11 @@ const Navbar = () => {
 
         {/* Mobile Navbar */}
         <div className={`flex lg:hidden w-full items-center justify-between py-4 rounded-full px-2 ${isScroll ? "bg-white/40 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
-          <Link to={'/'}>
+          <NavLink to={'/'}>
             <div className="logo">
               <img className='w-12' src={Images.logo} alt="" />
             </div>
-          </Link>
+          </NavLink>
           <div className='flex items-center'>
             <button
               onClick={() => {
@@ -102,10 +111,19 @@ const Navbar = () => {
           >
             <img className='w-5' src={Images.cancel} alt="" />
           </button>
-          <ul className='flex flex-col gap-6 font-semibold text-lg'>
-            <Link to={"/Partners"} onClick={() => setMenuOpen(false)}><li className='text-sm pb-5 border-b-[1px] border-[#00000079]'>Partners</li></Link>
-            <Link to={"/Restaurants"} onClick={() => setMenuOpen(false)}><li className='text-sm pb-5 border-b-[1px] border-[#00000079]'>Restaurants</li></Link>
-            <Link to={"/About"} onClick={() => setMenuOpen(false)}><li className='text-sm pb-5 border-b-[1px] border-[#00000079]'>About</li></Link>
+          <ul className='flex flex-col font-semibold text-lg'>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "text-[#111]"
+            } to={"/"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Home</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
+            } to={"/Partners"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Partners</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
+            } to={"/Restaurants"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Restaurants</li></NavLink>
+            <NavLink className={({ isActive }) =>
+              isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
+            } to={"/About"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>About</li></NavLink>
           </ul>
           <div className="language mt-auto mb-8">
             <button className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full'>EN/ES</button>

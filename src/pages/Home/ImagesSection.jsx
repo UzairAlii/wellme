@@ -45,48 +45,45 @@ const ImagesSection = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="w-full py-12 px-2 md:px-5 flex flex-col items-center justify-center">
+      className="w-full py-12 lg:px-5 flex flex-col items-center justify-center mt-10">
+
+
       {/* Images Row */}
       <div className="w-full flex justify-center items-center mb-10">
-
-        {/* Desktop */}
-        <div className="hidden md:flex gap-6">
-          {AllImages.map((img, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: idx * 0.2 }}
-              className="w-32 h-44"
-            >
-              <img
-                src={img}
-                alt=""
-                className="w-full h-full object-cover rounded-[22px] shadow-md"
-              />
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Mobile Swiper */}
-        <div className="md:hidden w-full px-2">
+        <div className="w-full px-2">
           <Swiper
-            spaceBetween={16}
-            slidesPerView={1.2}
-            className="w-full"
+            spaceBetween={0}
+            className="w-full select-none"
+            breakpoints={{
+              320: { slidesPerView: 1.05, spaceBetween: 5 },
+              480: { slidesPerView: 1.25, spaceBetween: 5 },
+              640: { slidesPerView: 2, spaceBetween: 5 },
+              768: { slidesPerView: 2.4, spaceBetween: 5 },
+              992: { slidesPerView: 3.2, spaceBetween: 5 },
+              1200: { slidesPerView: 4, spaceBetween: 5 },
+              1400: { slidesPerView: 5, spaceBetween: 5 },
+            }}
+            simulateTouch={true}
+            touchStartPreventDefault={false}
+            preventClicks={false}
           >
             {AllImages.map((img, idx) => (
-              <SwiperSlide key={idx}>
+              <SwiperSlide key={idx} className="flex items-center justify-center">
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
+                  initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, }}
-                  className="w-full h-44"
+                  transition={{ duration: 0.45, delay: idx * 0.06 }}
+                  className="w-full h-[250px] md:h-[280px] flex items-center justify-center rounded-3xl overflow-hidden shadow-md"
+                  style={{ userSelect: 'none', WebkitUserDrag: 'none' }}
                 >
                   <img
                     src={img}
                     alt=""
-                    className="w-full h-44 object-cover rounded-[22px] shadow-md"
+                    draggable={false}
+                    onDragStart={(e) => e.preventDefault()}
+                    onMouseDown={(e) => e.preventDefault()}
+                    className="w-full h-full object-cover select-none"
+                    style={{ WebkitUserDrag: 'none', pointerEvents: 'none' }}
                   />
                 </motion.div>
               </SwiperSlide>
@@ -95,18 +92,18 @@ const ImagesSection = () => {
         </div>
       </div>
 
+
       {/* Stats Row */}
-      {/* Stats Row */}
-      <div ref={sectionRef} className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-30 mt-2">
+      <div ref={sectionRef} className="w-full flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-30 mt-10">
         {stats.map((stat, idx) => (
           <motion.div
             key={idx}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: idx * 0.2 }}
-            className="flex flex-col items-center justify-center mac w-full md:w-[250px]"
+            className="flex flex-col items-center justify-center mac w-full lg:w-[250px]"
           >
-            <span className="text-3xl md:text-5xl font-bold text-[#3c1d00] flex items-center justify-center">
+            <span className="text-3xl lg:text-5xl font-bold text-[#3c1d00] flex items-center justify-center">
               {stat.prefix && <span>{stat.prefix}</span>}
               {startCount ? (
                 <CountUp
@@ -120,7 +117,7 @@ const ImagesSection = () => {
               {stat.quantity && <span>{stat.quantity}</span>}
               {stat.suffix && <span>{stat.suffix}</span>}
             </span>
-            <span className="outfit mt-2 text-center w-[50%] md:w-full text-xs md:text-base font-semibold tracking-wide text-[#3c1d00]">
+            <span className="dreaming mt-2 text-center w-[50%] lg:w-full text-xs lg:text-base font-semibold tracking-wide text-[#3c1d00]">
               {stat.label}
             </span>
           </motion.div>

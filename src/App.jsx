@@ -8,10 +8,12 @@ import About from './pages/About/About'
 import { Images } from './assets/assets'
 import PreFooter from './components/PreFooter'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
-    <div className="relative h-fixed">
+    <div className="relative">
+      <ScrollToTop />
       <img
         src={Images.gredientBg}
         className="fixed inset-0 w-full h-full object-cover -z-1 opacity-50 pointer-events-none"
@@ -25,8 +27,6 @@ const App = () => {
         <Route path='/Partners' element={<Partners />} />
         <Route path='/Restaurants' element={<Restaurants />} />
       </Routes>
-
-      <PreFooter />
       <Footer />
 
 

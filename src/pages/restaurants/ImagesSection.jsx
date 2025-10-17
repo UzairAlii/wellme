@@ -1,17 +1,18 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Images } from '../../assets/assets'
-import CountUp from 'react-countup'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { motion } from "motion/react";
 import 'swiper/css'
 
 const AllImages = [
-    Images.partnerLanding1,
-    Images.partnerLanding2,
-    Images.partnerLanding3,
-    Images.partnerLanding4,
-    Images.partnerLanding5,
+    Images.restlanding1,
+    Images.restlanding2,
+    Images.restlanding3,
+    Images.restlanding4,
+    Images.restlanding5,
 ]
+
+
 
 const ImagesSection = () => {
 

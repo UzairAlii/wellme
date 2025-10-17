@@ -22,7 +22,8 @@ import landing7 from './images/landing7.jpg'
 import landing8 from './images/landing8.jpg'
 import landing9 from './images/landing9.jpg'
 import logo from './images/logo.jpg'
-import mobiles from './images/mobiles.jpg'
+import mobiles from './images/mobiles.png'
+import bigCircle from './images/bigCircle.png'
 import oneMobile from './images/one-mobile.jpg'
 import partnerLanding1 from './images/partnersLanding1.jpg'
 import partnerLanding2 from './images/partnersLanding2.jpg'
@@ -54,6 +55,7 @@ export const Images = {
     coFounder,
     forRestaurants,
     forPartners,
+    bigCircle,
     gredientBg,
     gredientCircle,
     icon1,
