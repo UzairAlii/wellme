@@ -6,8 +6,8 @@ const PreFooter = ({
   rightBtnText,
   onLeftClick,
   onRightClick,
-  leftBtnColor,     // 👈 new prop
-  rightBtnColor,    // 👈 new prop
+  leftBtnColor,
+  rightBtnColor,
 }) => {
   const hasLeft = Boolean(leftBtnText)
   const hasRight = Boolean(rightBtnText)
@@ -24,38 +24,38 @@ const PreFooter = ({
           {description}
         </p>
 
+        {/* ✅ Buttons Section */}
         <div
-          className={`w-full sm:w-[40%] md:w-[50%] items-center ${
-            twoButtons ? 'flex flex-col md:flex-row gap-3' : 'flex items-center justify-center'
+          className={`w-full sm:w-[40%] md:w-[50%] flex items-center justify-center ${
+            twoButtons ? 'flex-col md:flex-row gap-5' : 'flex-col'
           }`}
         >
           {hasLeft && (
-            <div className="w-full flex justify-center">
-              <button
-                style={{ backgroundColor: leftBtnColor || '#b0bfe6', color : leftBtnTextColor || "#111" }} // 👈 default ya custom color
-                className={`${single ? 'w-full md:w-fit' : ''} px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm`}
-                onClick={onLeftClick}
-                type="button"
-              >
-                {leftBtnText}
-              </button>
-            </div>
+            <button
+              style={{
+                backgroundColor: leftBtnColor || '#b0bfe6',
+                color: leftBtnTextColor || '#111',
+              }}
+              className={`px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm`}
+              onClick={onLeftClick}
+              type="button"
+            >
+              {leftBtnText}
+            </button>
           )}
 
           {hasRight && (
-            <div className="w-full flex justify-center">
-              <button
-                style={{
-                  backgroundColor: rightBtnColor || 'transparent', // 👈 default ya custom color
-                  border: rightBtnColor ? 'none' : '1px solid #3c1d00',
-                }}
-                className={`${single ? 'w-full md:w-fit' : ''} px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm`}
-                onClick={onRightClick}
-                type="button"
-              >
-                {rightBtnText}
-              </button>
-            </div>
+            <button
+              style={{
+                backgroundColor: rightBtnColor || 'transparent',
+                border: rightBtnColor ? 'none' : '1px solid #3c1d00',
+              }}
+              className={`px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm`}
+              onClick={onRightClick}
+              type="button"
+            >
+              {rightBtnText}
+            </button>
           )}
         </div>
       </div>

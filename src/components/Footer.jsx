@@ -13,14 +13,6 @@ const Footer = () => {
         {/* Links */}
         <ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8 font-semibold text-sm mb-3 md:mb-0">
           <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
-            }
-          >
-            <li>Home</li>
-          </NavLink>
-          <NavLink
             to="/Partners"
             className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"

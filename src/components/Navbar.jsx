@@ -24,25 +24,22 @@ const Navbar = () => {
     <div className='fixed top-0 left-0 w-full z-20'>
       <div className='h-[13vh] w-full flex items-center justify-center px-4 lg:px-10 relative'>
         {/* Desktop/Tablet Navbar */}
-        <div className='hidden lg:flex w-[65%] bg-[#c6d1ed]/40 backdrop-blur-md shadow-sm rounded-full py-2 pl-5 pr-2 items-center justify-between'>
+        <div className='hidden lg:flex w-[75%] bg-[#c6d1ed] backdrop-blur-md shadow-sm rounded-full py-2 pl-5 pr-2 items-center justify-between'>
           <NavLink to={'/'}>
             <div className="logo">
               <img className='w-14' src={Images.logo} alt="" />
             </div>
           </NavLink>
-          <ul className='flex items-center gap-5 font-semibold'>
+          <ul className='flex items-center gap-5 font-semibold -mr-12'>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/"}><li className='transition hover:text-[#c28347]'>Home</li></NavLink>
+            } to={"/Partners"}><li className='transition hover:text-[#c28347] font-bold'>Partners</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Partners"}><li className='transition hover:text-[#c28347]'>Partners</li></NavLink>
+            } to={"/Restaurants"}><li className='transition hover:text-[#c28347] font-bold'>Restaurants</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Restaurants"}><li className='transition hover:text-[#c28347]'>Restaurants</li></NavLink>
-            <NavLink className={({ isActive }) =>
-              isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/About"}><li className='transition hover:text-[#c28347]'>About</li></NavLink>
+            } to={"/About"}><li className='transition hover:text-[#c28347] font-bold'>About</li></NavLink>
           </ul>
           <button
             onClick={() => {
@@ -51,14 +48,14 @@ const Navbar = () => {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className='bg-[#c28347] rounded-full py-2 px-4 text-white text-sm font-semibold cursor-pointer hover:bg-[#bf7836]'
+            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm font-bold cursor-pointer hover:bg-[#bf7836]'
           >
             Get Started
           </button>
         </div>
 
         <div className="language absolute right-10 hidden lg:block">
-          <button className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full border-[1px] border-[#c282475b] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111]'>EN/ES</button>
+          <button className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full border-[1px] border-[#c282475b] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] font-bold'>EN/ES</button>
         </div>
 
         {/* Mobile Navbar */}
@@ -112,9 +109,6 @@ const Navbar = () => {
             <img className='w-5' src={Images.cancel} alt="" />
           </button>
           <ul className='flex flex-col font-semibold text-lg'>
-            <NavLink className={({ isActive }) =>
-              isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "text-[#111]"
-            } to={"/"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Home</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
             } to={"/Partners"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Partners</li></NavLink>

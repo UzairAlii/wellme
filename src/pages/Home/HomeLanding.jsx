@@ -16,7 +16,7 @@ const HomeLanding = () => {
                 transition={{ duration: 1, type: 'spring', stiffness: 100 }}
                 className='w-24' src={Images.smallLogo} alt="" />
 
-           <div className='flex flex-col items-center justify-center w-full gap-3'>
+           <div className='flex flex-col items-center justify-center w-full gap-[20px]'>
              <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -26,35 +26,48 @@ const HomeLanding = () => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
-                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#3c1d00]'>The First Bilingual Wellness</motion.h1>
+                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#251500]'>The First Bilingual Wellness</motion.h1>
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
-                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#3c1d00]'>Platform for Hospitality</motion.h1>
+                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#251500]'>Platform for Hospitality</motion.h1>
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
-                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#3c1d00]'> Workers & Families</motion.h1>
+                className='mac hidden md:block text-2xl lg:text-5xl text-center w-full lg:w-[70%] font-semibold text-[#251500]'> Workers & Families</motion.h1>
            </div>
 
+            <div className='w-full flex items-center justify-center flex-col font-semibold'>
+                <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.8 }}
+                className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%]'>We partner with content and service providers to deliver life-changing tools for
+                </motion.p>
+                <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.8 }}
+                className='text-center hidden lg:block text-md lg:text-xl w-full lg:w-[63%]'>We partner with content and service providers to deliver life-changing tools for
+                </motion.p>
             <motion.p
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-                className='text-center text-md lg:text-xl w-full lg:w-[63%]'>We partner with content and service providers to deliver life-changing tools for
-                restaurant teams and their families. Simple. Inclusive. Community-driven.</motion.p>
+                className='text-center hidden lg:block text-md lg:text-xl w-full lg:w-[63%]'>restaurant teams and their families. Simple. Inclusive. Community-driven.</motion.p>
+            </div>
 
             <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
-                className="buttons flex items-center gap-5">
-                <button className='cursor-pointer px-5 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-sm'>
+                className="buttons flex items-center gap-2 lg:gap-5">
+                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
                     Become a Partner
                 </button>
-                <button className='cursor-pointer px-5 py-3 font-semibold rounded-full border border-black bg-transparent transition-colors duration-200 hover:bg-[#c6d1ed] hover:text-black text-sm'>
+                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border-2 border-black bg-transparent transition-colors duration-200 hover:bg-[#c6d1ed] hover:text-black text-base'>
                     For Restaurants
                 </button>
             </motion.div>
