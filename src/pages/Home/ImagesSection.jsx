@@ -139,10 +139,10 @@ const ImagesSection = () => {
               {stat.quantity && <span>{stat.quantity}</span>}
               {stat.suffix && <span>{stat.suffix}</span>}
             </span>
-            <span className="dreaming mt-2 text-center w-[50%] lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+            <span className="dreaming mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
               {stat.label1}
             </span>
-            <span className="dreaming mt-2 text-center w-[50%] lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+            <span className="dreaming mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
               {stat.label2}
             </span>
           </motion.div>

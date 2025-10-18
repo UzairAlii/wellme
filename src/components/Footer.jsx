@@ -5,20 +5,20 @@ import { Link, NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className="w-full py-3 bg-transparent">
-      <div className="bg-[#c6d1ed] rounded-[18px] w-full mx-auto flex flex-col md:flex-row items-center justify-between px-10 py-4 md:py-3 shadow">
+      <div className="bg-[#c6d1ed] rounded-[18px] w-full mx-auto flex flex-col md:flex-row items-center justify-between px-5 py-4 md:py-3 shadow">
         {/* Logo */}
         <div className="flex items-center mb-3 md:mb-0">
           <img src={Images.brownLogo} alt="Footer Logo" className="w-24" />
         </div>
         {/* Links */}
-        <ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8 font-semibold text-sm mb-3 md:mb-0">
+        <ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8 font-semibold text-sm mb-3 md:mb-0 lg:-mr-12">
           <NavLink
             to="/Partners"
             className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li>Partners</li>
+            <li className='transition hover:text-[#c28347] font-bold text-base'>Partners</li>
           </NavLink>
 
           <NavLink
@@ -27,7 +27,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li>Restaurants</li>
+            <li className='transition hover:text-[#c28347] font-bold text-base'>Restaurants</li>
           </NavLink>
 
           <NavLink
@@ -36,7 +36,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li>About</li>
+            <li className='transition hover:text-[#c28347] font-bold text-base'>About</li>
           </NavLink>
 
           <NavLink
@@ -45,7 +45,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li>Newsletter</li>
+            <li className='transition hover:text-[#c28347] font-bold text-base'>Newsletter</li>
           </NavLink>
         </ul>
         {/* Button */}
@@ -57,14 +57,14 @@ const Footer = () => {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className='bg-[#c28347] rounded-full py-2 px-4 text-white text-sm font-semibold cursor-pointer hover:bg-[#bf7836]'
+            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm font-bold cursor-pointer hover:bg-[#bf7836]'
           >
             Get Started
           </button>
         </div>
       </div>
       {/* Bottom copyright and links */}
-      <div className="w-full max-w-6xl mx-auto text-[11px] text-[#222] text-center mt-2">
+      <div className="w-full max-w-6xl mx-auto text-sm text-[#222] text-center mt-2">
         © 2025 The Wellness Method | Privacy Policy | Terms and Conditions | Contact | Take the wellme Health Assessment
       </div>
     </footer>

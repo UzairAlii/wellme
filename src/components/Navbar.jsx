@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className='fixed top-0 left-0 w-full z-20'>
       <div className='h-[13vh] w-full flex items-center justify-center px-4 lg:px-10 relative'>
         {/* Desktop/Tablet Navbar */}
-        <div className='hidden lg:flex w-[75%] bg-[#c6d1ed] backdrop-blur-md shadow-sm rounded-full py-2 pl-5 pr-2 items-center justify-between'>
+        <div className='hidden lg:flex w-[75%] bg-[#c6d1ed]/80 backdrop-blur-md shadow-sm rounded-full py-2 pl-5 pr-2 items-center justify-between'>
           <NavLink to={'/'}>
             <div className="logo">
               <img className='w-14' src={Images.logo} alt="" />

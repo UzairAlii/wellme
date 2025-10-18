@@ -129,7 +129,7 @@ const ForRestaurantsAndPartners = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.3 }}
                     className='flex flex-col items-center justify-center text-center gap-5 bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[60%]'>
-                    <p className='italic font-normal text-lg lg:text-2xl w-[65%]'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
+                    <p className='italic font-normal text-lg lg:text-2xl w-[90%] lg:w-[65%]'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
                     <span className='font-bold italic text-lg'>— Restaurant Operator</span>
                 </motion.div>
                 <motion.div
@@ -137,7 +137,7 @@ const ForRestaurantsAndPartners = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.6 }}
                     className='flex flex-col items-center justify-center text-center gap-5 bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[40%]'>
-                    <p className='italic font-normal text-lg lg:text-2xl w-[80%]'>
+                    <p className='italic font-normal text-lg lg:text-2xl w-[90%] lg:w-[80%]'>
                         “Partnering with WellMe gave us new visibility and a chance to make real impact.”
                     </p>
                     <span className='font-bold italic text-lg'>— Service Provider</span>

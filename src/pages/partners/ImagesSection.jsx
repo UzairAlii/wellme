@@ -37,7 +37,7 @@ const ImagesSection = () => {
                             <img
                                 src={img}
                                 alt=""
-                                className="w-full h-full object-contain rounded-[32px] shadow-lg"
+                                className="w-full h-full object-cover rounded-[32px] shadow-lg"
                             />
                         </motion.div>
                     ))}
