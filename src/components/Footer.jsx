@@ -18,7 +18,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li className='transition hover:text-[#c28347] font-bold text-base'>Partners</li>
+            <li className='transition hover:text-[#c28347] text-sm openSauceRegular font-semibold'>Partners</li>
           </NavLink>
 
           <NavLink
@@ -27,7 +27,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li className='transition hover:text-[#c28347] font-bold text-base'>Restaurants</li>
+            <li className='transition hover:text-[#c28347] openSauceRegular text-sm'>Restaurants</li>
           </NavLink>
 
           <NavLink
@@ -36,7 +36,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li className='transition hover:text-[#c28347] font-bold text-base'>About</li>
+            <li className='transition hover:text-[#c28347] openSauceRegular text-sm'>About</li>
           </NavLink>
 
           <NavLink
@@ -45,7 +45,7 @@ const Footer = () => {
               isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
             }
           >
-            <li className='transition hover:text-[#c28347] font-bold text-base'>Newsletter</li>
+            <li className='transition hover:text-[#c28347] openSauceRegular text-sm'>Newsletter</li>
           </NavLink>
         </ul>
         {/* Button */}
@@ -57,14 +57,14 @@ const Footer = () => {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm font-bold cursor-pointer hover:bg-[#bf7836]'
+            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm openSauceRegular font-semibold cursor-pointer hover:bg-[#bf7836]'
           >
             Get Started
           </button>
         </div>
       </div>
       {/* Bottom copyright and links */}
-      <div className="w-full max-w-6xl mx-auto text-xs lg:text-sm text-[#222] text-center mt-2 px-3">
+      <div className="w-full max-w-6xl mx-auto text-[10px] lg:text-sm text-[#222] text-center mt-2 px-3 openSauceRegular">
         © 2025 The Wellness Method | Privacy Policy | Terms and Conditions | Contact | Take the wellme Health Assessment
       </div>
     </footer>

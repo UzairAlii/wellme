@@ -28,7 +28,7 @@ const PartnersSegment = () => {
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-center md:items-start justify-center">
           <h2 className="mac text-lg md:text-2xl font-bold text-[#3c1d00] mb-3">CONTENT PROVIDERS</h2>
-          <p className="text-base md:text-xl md:text-start text-center text-[#222] mb-6 w-full md:w-[90%] leading-6">
+          <p className="text-base md:text-md md:text-start text-center text-[#222] mb-6 w-full md:w-[90%] leading-6 openSauceRegular font-medium">
             Bring your expertise to a new audience. From fitness to mindfulness, financial literacy to parenting, your content becomes part of a bilingual, mobile-first library.
           </p>
           <div className="flex flex-col gap-3 w-full mb-4">
@@ -39,7 +39,7 @@ const PartnersSegment = () => {
               VISIBILITY, ENGAGEMENT DATA, AND REVENUE OPPORTUNITIES.
             </div>
           </div>
-          <button className="bg-[#c6d1ed] py-3 px-5 font-semibold cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition">
+          <button className="bg-[#c6d1ed] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceRegular font-semibold">
             Become a Partner
           </button>
         </div>
@@ -66,7 +66,7 @@ const PartnersSegment = () => {
           <h2 className="mac text-lg md:text-2xl font-bold text-[#3c1d00] mb-3">
             SERVICE PROVIDERS
           </h2>
-          <p className="text-base md:text-xl md:text-start text-center text-[#222] mb-6 w-full leading-6">
+          <p className="text-base md:text-md md:text-start text-center text-[#222] mb-6 w-full md:w-[90%] leading-6 openSauceRegular font-medium">
             Offer your services to an industry workforce that’s been overlooked for too long.
             From telehealth to childcare, counselling to financial tools, your business gets direct access.
           </p>
@@ -81,7 +81,7 @@ const PartnersSegment = () => {
             </div>
           </div>
 
-          <button className="bg-[#efc0d4] py-3 px-5 font-semibold cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#e3c1d1] transition">
+          <button className="bg-[#efc0d4] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#e3c1d1] transition openSauceRegular font-semibold">
             Become a Partner
           </button>
         </div>

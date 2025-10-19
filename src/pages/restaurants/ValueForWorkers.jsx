@@ -23,7 +23,7 @@ const ValueForWorkers = () => {
                     <div className='logo&heading flex lg:flex-row flex-col text-center md:text-start items-center justify-start gap-3'>
                         <img className='w-20' src={Images.icon1} alt="" />
                         <div className='flex flex-col'>
-                            <p className='lg:text-xl text-sm font-medium outfit'>When you sign up your restaurant, your staff and their families get:</p>
+                            <p className='lg:text-lg text-sm font-medium openSauceRegular'>When you sign up your restaurant, your staff and their families get:</p>
                         </div>
                     </div>
     
@@ -50,7 +50,7 @@ const ValueForWorkers = () => {
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 1.5, delay: 0.3 }}
                                 className='flex flex-col items-center gap-5  px-10 py-7 rounded-full'>
-                                    <p className='italic font-medium text-sm lg:text-base lg:w-[70%]'>“Since offering WellMe, our staff feels supported both on and off the job. It’s helped us build a stronger, more loyal team.”<span className='font-bold'> — Restaurant owner</span></p>
+                                    <p className='italic font-medium text-sm lg:text-base lg:w-[70%] openSauceRegular'>“Since offering WellMe, our staff feels supported both on and off the job. It’s helped us build a stronger, more loyal team.”<span className='font-bold'> — Restaurant owner</span></p>
                                 </motion.div>
                                 
                             </div>

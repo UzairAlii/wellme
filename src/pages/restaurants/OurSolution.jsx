@@ -23,9 +23,9 @@ const OurSolution = () => {
                 <div className='logo&heading flex lg:flex-row flex-col text-center md:text-start items-center justify-start gap-3'>
                     <img src={Images.logo} alt="" />
                     <div className='flex flex-col'>
-                        <p className='lg:text-xl block lg:hidden text-sm font-medium outfit'>WellMe is the first bilingual, mobile-first wellness platform built for hospitality teams and their families.</p>
-                        <p className='lg:text-xl hidden lg:block text-sm font-medium outfit'>WellMe is the first bilingual, mobile-first wellness platform</p>
-                        <p className='lg:text-xl hidden lg:block text-sm font-medium outfit'>built for hospitality teams and their families.</p>
+                        <p className='lg:text-lg block lg:hidden text-sm font-medium openSauceRegular'>WellMe is the first bilingual, mobile-first wellness platform built for hospitality teams and their families.</p>
+                        <p className='lg:text-lg hidden lg:block text-sm font-medium openSauceRegular'>WellMe is the first bilingual, mobile-first wellness platform</p>
+                        <p className='lg:text-lg hidden lg:block text-sm font-medium openSauceRegular'>built for hospitality teams and their families.</p>
                     </div>
                 </div>
 

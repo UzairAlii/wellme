@@ -20,14 +20,14 @@ const PreFooter = ({
         <h2 className="text-2xl md:text-4xl font-bold text-[#3c1d00] text-center mb-4 tracking-wide mac w-full md:w-[50%]">
           {title}
         </h2>
-        <p className="text-sm md:text-lg text-[#3c1d00] text-center mb-8 w-full md:w-[40%]">
+        <p className="text-sm md:text-lg text-[#3c1d00] text-center mb-8 w-full md:w-[40%] openSauceRegular font-medium">
           {description}
         </p>
 
         {/* ✅ Buttons Section */}
         <div
           className={`w-full sm:w-[40%] md:w-[50%] flex items-center justify-center ${
-            twoButtons ? 'flex-col md:flex-row gap-5' : 'flex-col'
+            twoButtons ? 'flex-col md:flex-row gap-2' : 'flex-col'
           }`}
         >
           {hasLeft && (
@@ -36,7 +36,7 @@ const PreFooter = ({
                 backgroundColor: leftBtnColor || '#b0bfe6',
                 color: leftBtnTextColor || '#111',
               }}
-              className={`px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
+              className={`px-10 py-3 rounded-full openSauceRegular font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
               onClick={onLeftClick}
               type="button"
             >
@@ -50,7 +50,7 @@ const PreFooter = ({
                 backgroundColor: rightBtnColor || 'transparent',
                 border: rightBtnColor ? 'none' : '1px solid #3c1d00',
               }}
-              className={`px-6 py-3 rounded-full font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
+              className={`px-6 py-3 rounded-full openSauceRegular font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
               onClick={onRightClick}
               type="button"
             >

@@ -39,7 +39,7 @@ const RestLanding = () => {
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1.2, duration: 0.8 }}
-                    className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%]'>Support your staff. Reduce turnover. Include families. WellMe makes it simple.</motion.p>
+                    className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%] openSauceRegular font-semibold'>Support your staff. Reduce turnover. Include families. WellMe makes it simple.</motion.p>
                 <motion.p
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -57,7 +57,7 @@ const RestLanding = () => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
-                className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c28347] transition-colors duration-200 hover:bg-transparent hover:border-black text-white hover:text-black text-base'>
+                className='cursor-pointer px-5 lg:px-9 py-3 rounded-full border border-[#c6d1ed] bg-[#c28347] transition-colors duration-200 hover:bg-transparent hover:border-black openSauceRegular font-semibold text-white hover:text-black text-base'>
                 Bring WellMe to Your Team
             </motion.button>
 

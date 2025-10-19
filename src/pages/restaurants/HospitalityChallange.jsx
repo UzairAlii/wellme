@@ -26,11 +26,11 @@ const HospitalityChallange = () => {
                     {points.map((text, idx) => (
                         <li key={idx} className="flex items-start md:items-center gap-4">
                             <img src={Images.keypoints} alt="" className="w-5 h-5" />
-                            <span className="text-sm md:text-lg text-[#222] font-semibold">{text}</span>
+                            <span className="text-sm md:text-lg text-[#222] openSauceMedium leading-0">{text}</span>
                         </li>
                     ))}
                 </ul>
-                <button className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm lg:text-base font-bold cursor-pointer hover:bg-[#bf7836] mt-8'>
+                <button className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm lg:text-base openSauceBold cursor-pointer hover:bg-[#bf7836] mt-8'>
                     Bring WellMe to Your Team
                 </button>
             </div>

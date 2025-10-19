@@ -38,13 +38,13 @@ const Navbar = () => {
           <ul className='flex items-center gap-5 font-semibold -mr-12'>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Partners"}><li className='transition hover:text-[#c28347] font-bold'>{trans.Partners}</li></NavLink>
+            } to={"/Partners"}><li className='transition hover:text-[#c28347] openSauceRegular text-sm'>{trans.Partners}</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Restaurants"}><li className='transition hover:text-[#c28347] font-bold'>{trans.Restaurants}</li></NavLink>
+            } to={"/Restaurants"}><li className='transition hover:text-[#c28347] openSauceRegular text-sm'>{trans.Restaurants}</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/About"}><li className='transition hover:text-[#c28347] font-bold'>{trans.About}</li></NavLink>
+            } to={"/About"}><li className='transition hover:text-[#c28347] openSauceRegular text-sm'>{trans.About}</li></NavLink>
           </ul>
           <button
             onClick={() => {
@@ -53,7 +53,7 @@ const Navbar = () => {
                 section.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm font-bold cursor-pointer hover:bg-[#bf7836]'
+            className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm openSauceRegular font-semibold cursor-pointer hover:bg-[#bf7836]'
           >
             {trans.getStartedBtn}
           </button>
@@ -81,7 +81,7 @@ const Navbar = () => {
                   section.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className='bg-[#c28347] rounded-full py-2 px-4 text-white text-sm font-semibold cursor-pointer hover:bg-[#bf7836]'
+              className='bg-[#c28347] rounded-full py-3 px-5 text-white text-sm openSauceRegular font-medium cursor-pointer hover:bg-[#bf7836]'
             >
               Get Started
             </button>
@@ -119,13 +119,13 @@ const Navbar = () => {
           <ul className='flex flex-col font-semibold text-lg'>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
-            } to={"/Partners"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Partners</li></NavLink>
+            } to={"/Partners"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 openSauceRegular font-medium border-b-[1px] border-[#00000079]'>Partners</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
-            } to={"/Restaurants"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>Restaurants</li></NavLink>
+            } to={"/Restaurants"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 openSauceRegular font-medium  border-b-[1px] border-[#00000079]'>Restaurants</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347] bg-[#ececec] rounded-sm" : "hover:text-[#c28347]"
-            } to={"/About"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>About</li></NavLink>
+            } to={"/About"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 openSauceRegular font-medium  border-b-[1px] border-[#00000079]'>About</li></NavLink>
           </ul>
           <div className="language mt-auto mb-8">
             <button

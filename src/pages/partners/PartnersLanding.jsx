@@ -44,24 +44,24 @@ const PartnersLanding = () => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-               className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%]'>Become a Founding WellMe Partner and deliver your content or services directly to the people who need them most.</motion.p>
+               className='text-center block lg:hidden text-md lg:text-lg w-full lg:w-[63%] openSauceRegular font-medium'>Become a Founding WellMe Partner and deliver your content or services directly to the people who need them most.</motion.p>
              <motion.p
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-                className='text-center hidden lg:block text-md lg:text-xl w-full lg:w-[63%]'>Become a Founding WellMe Partner and deliver your content or</motion.p>
+                className='text-center hidden lg:block text-md lg:text-lg w-full lg:w-[63%] openSauceRegular font-medium'>Become a Founding WellMe Partner and deliver your content or</motion.p>
              <motion.p
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-                className='text-center hidden lg:block text-md lg:text-xl w-full lg:w-[63%]'>services directly to the people who need them most.</motion.p>
+                className='text-center hidden lg:block text-md lg:text-lg w-full lg:w-[63%] openSauceRegular font-medium'>services directly to the people who need them most.</motion.p>
 
            </div>
                 <motion.button 
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
-                 className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
+                 className='cursor-pointer px-5 lg:px-9 py-3 openSauceRegular font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
                     Become a Partner
                 </motion.button>
 

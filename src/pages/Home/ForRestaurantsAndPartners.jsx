@@ -44,7 +44,7 @@ const ForRestaurantsAndPartners = () => {
                     transition={{ duration: 1.5, delay: 0.3 }}
                     className="bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg flex flex-col items-center justify-center px-6 py-7 lg:py-10 w-full lg:w-[40%] h-full lg:h-[450px] ">
                     <h1 className="text-xl lg:text-2xl mac font-semibold mb-2 tracking-wide text-[#3c1d00]">FOR PARTNERS</h1>
-                    <p className="text-lg lg:text-xl font-semibold w-full lg:w-[80%] text-center mb-6 text-[#3c1d00]">
+                    <p className="text-base lg:text-lg w-full lg:w-[80%] text-center mb-6 text-[#3c1d00] openSauceMedium">
                         Grow with us by reaching thousands of hospitality workers and families.
                     </p>
                     <div className="flex flex-col items-center justify-center gap-2 w-full">
@@ -58,7 +58,7 @@ const ForRestaurantsAndPartners = () => {
                             FIRST-MOVER ADVANTAGE
                         </div>
                     </div>
-                    <button className="bg-[#c6d1ed] py-3 px-10 font-bold cursor-pointer rounded-full mt-7 text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition">
+                    <button className="bg-[#c6d1ed] py-3 px-10 cursor-pointer rounded-full mt-7 text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceBold">
                         Become a Partner
                     </button>
                 </motion.div>
@@ -102,7 +102,7 @@ const ForRestaurantsAndPartners = () => {
                     <h1 className="text-xl lg:text-2xl mac font-semibold mb-2 tracking-wide text-[#3c1d00]">
                         FOR RESTAURANTS
                     </h1>
-                    <p className="text-lg lg:text-xl font-semibold w-full lg:w-[90%] text-center mb-6 text-[#3c1d00]">
+                    <p className="text-base lg:text-lg w-full lg:w-[80%] text-center mb-6 text-[#3c1d00] openSauceMedium">
                         Bring wellness to your team and their families.
                     </p>
                     <div className="flex flex-col items-center justify-center gap-2 w-full">
@@ -116,7 +116,7 @@ const ForRestaurantsAndPartners = () => {
                             STRENGTHEN LOYALTY & RETENTION
                         </div>
                     </div>
-                    <button className="bg-transparent border-2 border-black py-3 px-10 font-bold cursor-pointer rounded-full mt-7 text-[#3c1d00] text-base shadow transition">
+                    <button className="bg-transparent border-2 border-black py-3 px-10 cursor-pointer openSauceBold rounded-full mt-7 text-[#3c1d00] text-base shadow transition">
                         For Restaurants
                     </button>
                 </motion.div>
@@ -128,19 +128,19 @@ const ForRestaurantsAndPartners = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.3 }}
-                    className='flex flex-col items-center justify-center text-center gap-5 bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[60%]'>
-                    <p className='italic font-normal text-lg lg:text-2xl w-[90%] lg:w-[65%]'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
-                    <span className='font-bold italic text-lg'>— Restaurant Operator</span>
+                    className='flex flex-col items-center justify-center text-center bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[60%]'>
+                    <p className='italic text-base lg:text-lg w-[90%] lg:w-[65%] openSauceRegular'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
+                    <span className='openSauceBold italic text-lg'>— Restaurant Operator</span>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.6 }}
-                    className='flex flex-col items-center justify-center text-center gap-5 bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[40%]'>
-                    <p className='italic font-normal text-lg lg:text-2xl w-[90%] lg:w-[80%]'>
+                    className='flex flex-col items-center justify-center text-center bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[40%]'>
+                    <p className='italic text-base lg:text-lg w-[90%] lg:w-[70%] openSauceRegular'>
                         “Partnering with WellMe gave us new visibility and a chance to make real impact.”
                     </p>
-                    <span className='font-bold italic text-lg'>— Service Provider</span>
+                    <span className='openSauceBold italic text-lg'>— Service Provider</span>
                 </motion.div>
             </div>
 

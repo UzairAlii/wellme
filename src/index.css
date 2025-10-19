@@ -9,6 +9,22 @@
   font-family: 'Dreaming';
   src: url('./fonts/DreamingOutloudSans-CapsSlanted.woff2');
 }
+@font-face {
+  font-family: 'OpenSauceBold';
+  src: url('./fonts/OpenSauceOne-Bold.ttf');
+}
+@font-face {
+  font-family: 'OpenSauceMedium';
+  src: url('./fonts/OpenSauceOne-Medium.ttf');
+}
+@font-face {
+  font-family: 'OpenSauceRegular';
+  src: url('./fonts/OpenSauceOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSauceSemiBold';
+  src: url('./fonts/OpenSauceOne-SemiBold.ttf');
+}
 
 body{
   background-color: #f4f1ed;
@@ -22,4 +38,16 @@ body{
 }
 .dreaming{
     font-family: "Dreaming", sans-serif;
+}
+.openSauceBold{
+  font-family: "OpenSauceBold";
+}
+.openSauceMedium{
+  font-family: "OpenSauceMedium";
+}
+.openSauceRegular{
+  font-family: "OpenSauceRegular";
+}
+.openSauceSemiBold{
+  font-family: "OpenSauceSemiBold";
 }
