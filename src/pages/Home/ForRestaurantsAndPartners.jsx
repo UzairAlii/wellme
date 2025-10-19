@@ -129,7 +129,7 @@ const ForRestaurantsAndPartners = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.3 }}
                     className='flex flex-col items-center justify-center text-center bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg rounded-2xl h-[220px] w-full lg:w-[60%]'>
-                    <p className='italic text-base lg:text-lg w-[90%] lg:w-[65%] openSauceRegular'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
+                    <p className='italic text-base lg:text-lg w-[90%] lg:w-[55%] openSauceRegular'>“WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.”</p>
                     <span className='openSauceBold italic text-lg'>— Restaurant Operator</span>
                 </motion.div>
                 <motion.div
