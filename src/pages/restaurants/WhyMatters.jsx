@@ -33,7 +33,7 @@ const WhyMatters = () => {
                     </div>
 
                     <div>
-                        <img className='rounded-4xl w-full lg:w-[10vw]' src={Images.oneMobile} alt="" />
+                        <img className='rounded-4xl w-full lg:w-[13vw]' src={Images.oneMobile} alt="" />
                     </div>
     
                 </div>
