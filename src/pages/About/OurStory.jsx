@@ -14,9 +14,9 @@ const OurStory = () => {
                     Our Story
                 </h1>
                 <div className='flex flex-col gap-7'>
-                    <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%]'>Hospitality workers are the backbone of restaurants, hotels, and countless businesses. Yet for too long, they’ve been underserved — facing high stress, long hours, and limited access to wellness tools, often in a language they don’t speak. Families share that burden but rarely get the support they need.</p>
-                <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%]'>We created WellMe to change that.</p>
-                <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%]'>WellMe is the first bilingual wellness platform designed specifically for hospitality teams and their families. Our mission is to make wellness simple, inclusive, and community-driven — helping workers and families build healthier habits, feel supported, and thrive at work and at home.
+                    <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%] openSauceMedium'>Hospitality workers are the backbone of restaurants, hotels, and countless businesses. Yet for too long, they’ve been underserved — facing high stress, long hours, and limited access to wellness tools, often in a language they don’t speak. Families share that burden but rarely get the support they need.</p>
+                <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%] openSauceMedium'>We created WellMe to change that.</p>
+                <p className='font-medium text-sm lg:text-lg outfit w-full lg:w-[93%] openSauceMedium'>WellMe is the first bilingual wellness platform designed specifically for hospitality teams and their families. Our mission is to make wellness simple, inclusive, and community-driven — helping workers and families build healthier habits, feel supported, and thrive at work and at home.
 </p>
                 </div>
 

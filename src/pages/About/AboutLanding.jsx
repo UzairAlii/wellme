@@ -52,7 +52,7 @@ const AboutLanding = () => {
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
-                    className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%]'>We believe the people who power the hospitality industry deserve access to the same care, support, and opportunities they provide to others.</motion.p>
+                    className='text-center block lg:hidden text-md lg:text-xl w-full lg:w-[63%] openSauceRegular'>We believe the people who power the hospitality industry deserve access to the same care, support, and opportunities they provide to others.</motion.p>
 
                 {/* DESKTOP */}
                 <motion.p

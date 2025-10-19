@@ -21,41 +21,41 @@ const OurValue = () => {
 
                    <div className='flex flex-col items-center justify-center gap-5'>
                          <div className='bg-[#aee5bf]/60 px-16 py-3 rounded-full text-base lg:text-xl font-medium dreaming'>Accessibility</div>
-                    <div className='flex flex-col text-center leading-2'>
-                        <p className='text-base lg:text-lg font-normal'>Wellness should be easy to access, in every </p>
-                        <p className='text-base lg:text-lg font-normal'>language, on any device.</p>
+                    <div className='flex flex-col text-center'>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>Wellness should be easy to access, in every </p>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>language, on any device.</p>
                     </div>
                    </div>
 
                    <div className='flex flex-col items-center justify-center gap-5'>
                          <div className='bg-[#c6d1ed]/60 px-16 py-3 rounded-full text-base lg:text-xl font-medium dreaming'>Community</div>
-                    <div className='flex flex-col text-center leading-2'>
-                        <p className='text-base lg:text-lg font-normal'>Wellness should be easy to access, in every </p>
-                        <p className='text-base lg:text-lg font-normal'>language, on any device.</p>
+                    <div className='flex flex-col text-center'>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>Wellness should be easy to access, in every </p>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>language, on any device.</p>
                     </div>
                    </div>
 
                    <div className='flex flex-col items-center justify-center gap-5'>
                          <div className='bg-[#efc0d4]/60 px-16 py-3 rounded-full text-base lg:text-xl font-medium dreaming'>Evidence-Based</div>
-                    <div className='flex flex-col text-center leading-2'>
-                        <p className='text-base lg:text-lg font-normal'>Wellness should be easy to access, in every </p>
-                        <p className='text-base lg:text-lg font-normal'>language, on any device.</p>
+                    <div className='flex flex-col text-center'>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>Wellness should be easy to access, in every </p>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>language, on any device.</p>
                     </div>
                    </div>
 
                    <div className='flex flex-col items-center justify-center gap-5'>
                          <div className='bg-[#df9e48]/60 px-16 py-3 rounded-full text-base lg:text-xl font-medium dreaming'>Respect</div>
-                    <div className='flex flex-col text-center leading-2'>
-                        <p className='text-base lg:text-lg font-normal'>Wellness should be easy to access, in every </p>
-                        <p className='text-base lg:text-lg font-normal'>language, on any device.</p>
+                    <div className='flex flex-col text-center'>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>Wellness should be easy to access, in every </p>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>language, on any device.</p>
                     </div>
                    </div>
 
                    <div className='flex flex-col items-center justify-center gap-5'>
                          <div className='bg-[#ffffff]/60 px-16 py-3 rounded-full text-base lg:text-xl font-medium dreaming'>Sustainability</div>
-                    <div className='flex flex-col text-center leading-2'>
-                        <p className='text-base lg:text-lg font-normal'>Wellness should be easy to access, in every </p>
-                        <p className='text-base lg:text-lg font-normal'>language, on any device.</p>
+                    <div className='flex flex-col text-center'>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>Wellness should be easy to access, in every </p>
+                        <p className='text-base lg:text-lg font-normal opensauceRegular'>language, on any device.</p>
                     </div>
                    </div>
 
