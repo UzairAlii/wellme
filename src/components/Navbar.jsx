@@ -81,7 +81,7 @@ const Navbar = () => {
                   section.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className='bg-[#c28347] rounded-full py-3 px-5 text-white text-sm openSauceRegular font-medium cursor-pointer hover:bg-[#bf7836]'
+              className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm openSauceRegular font-medium cursor-pointer hover:bg-[#bf7836]'
             >
               Get Started
             </button>
