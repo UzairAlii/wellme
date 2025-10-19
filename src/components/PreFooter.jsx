@@ -36,7 +36,7 @@ const PreFooter = ({
                 backgroundColor: leftBtnColor || '#b0bfe6',
                 color: leftBtnTextColor || '#111',
               }}
-              className={`px-10 py-3 rounded-full openSauceRegular font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
+              className={`px-10 py-3 rounded-full openSauceBold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
               onClick={onLeftClick}
               type="button"
             >
@@ -50,7 +50,7 @@ const PreFooter = ({
                 backgroundColor: rightBtnColor || 'transparent',
                 border: rightBtnColor ? 'none' : '1px solid #3c1d00',
               }}
-              className={`px-6 py-3 rounded-full openSauceRegular font-semibold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
+              className={`px-6 py-3 rounded-full openSauceBold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
               onClick={onRightClick}
               type="button"
             >
