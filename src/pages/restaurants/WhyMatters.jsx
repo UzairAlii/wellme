@@ -8,7 +8,7 @@ const WhyMatters = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="w-full flex flex-col items-center justify-center mt-10 mb-30 px-3">
+                className="w-full flex flex-col items-center justify-center mt-24 px-3">
     
                 <motion.h1
                     initial={{ y: 20, opacity: 0 }}
@@ -18,22 +18,22 @@ const WhyMatters = () => {
                     Why This Matters for You
                 </motion.h1>
     
-                <div className='w-full flex flex-col lg:flex-row items-center justify-center gap-10 '>
+                <div className='w-full flex flex-col lg:flex-row items-center justify-center gap-5 '>
     
-                    <div className='max-w-3xl bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg px-8 py-10 flex flex-col gap-5'>
-                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                    <div className='max-w-3xl bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg px-8 lg:px-10 py-10 lg:py-16 flex flex-col gap-5'>
+                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                            Reduce costly turnover and absenteeism.
                         </div>
-                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Build loyalty and retention by showing staff and families you care.
                         </div>
-                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                        <div className="bg-[#df9e4851] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Give your teams a resource designed for their schedules, languages, and needs.
                         </div>
                     </div>
 
                     <div>
-                        <img className='rounded-4xl' src={Images.oneMobile} alt="" />
+                        <img className='rounded-4xl w-full lg:w-[10vw]' src={Images.oneMobile} alt="" />
                     </div>
     
                 </div>

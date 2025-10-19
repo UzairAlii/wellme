@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom copyright and links */}
-      <div className="w-full max-w-6xl mx-auto text-sm text-[#222] text-center mt-2">
+      <div className="w-full max-w-6xl mx-auto text-xs lg:text-sm text-[#222] text-center mt-2 px-3">
         © 2025 The Wellness Method | Privacy Policy | Terms and Conditions | Contact | Take the wellme Health Assessment
       </div>
     </footer>

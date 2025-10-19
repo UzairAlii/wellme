@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Images } from '../assets/assets'
 import { NavLink } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 const Navbar = () => {
+
+  const { toggleLanguage, language } = useLanguage()
+  const { trans } = useLanguage()
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [isScroll, setIsScroll] = useState(false)
 
@@ -33,13 +38,13 @@ const Navbar = () => {
           <ul className='flex items-center gap-5 font-semibold -mr-12'>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Partners"}><li className='transition hover:text-[#c28347] font-bold'>Partners</li></NavLink>
+            } to={"/Partners"}><li className='transition hover:text-[#c28347] font-bold'>{trans.Partners}</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/Restaurants"}><li className='transition hover:text-[#c28347] font-bold'>Restaurants</li></NavLink>
+            } to={"/Restaurants"}><li className='transition hover:text-[#c28347] font-bold'>{trans.Restaurants}</li></NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "text-[#c28347]" : "text-[#111]"
-            } to={"/About"}><li className='transition hover:text-[#c28347] font-bold'>About</li></NavLink>
+            } to={"/About"}><li className='transition hover:text-[#c28347] font-bold'>{trans.About}</li></NavLink>
           </ul>
           <button
             onClick={() => {
@@ -50,12 +55,15 @@ const Navbar = () => {
             }}
             className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm font-bold cursor-pointer hover:bg-[#bf7836]'
           >
-            Get Started
+            {trans.getStartedBtn}
           </button>
         </div>
 
         <div className="language absolute right-10 hidden lg:block">
-          <button className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full border-[1px] border-[#c282475b] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] font-bold'>EN/ES</button>
+          <button 
+           onClick={toggleLanguage}
+          className='bg-[#c282475b] px-4 py-2 rounded-full text-sm w-full border-[1px] border-[#c282475b] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] font-bold'>
+            EN/ES</button>
         </div>
 
         {/* Mobile Navbar */}
@@ -120,7 +128,12 @@ const Navbar = () => {
             } to={"/About"} onClick={() => setMenuOpen(false)}><li className='text-sm py-6 px-2 border-b-[1px] border-[#00000079]'>About</li></NavLink>
           </ul>
           <div className="language mt-auto mb-8">
-            <button className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full'>EN/ES</button>
+            <button
+              onClick={toggleLanguage}
+              className='bg-[#c282475b] px-4 py-2 font-semibold rounded-full text-sm w-full'>
+                {language === "en" ? "Español" : "English"}
+              EN/ES
+            </button>
           </div>
         </div>
       </div>

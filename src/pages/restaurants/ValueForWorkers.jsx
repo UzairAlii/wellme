@@ -8,7 +8,7 @@ const ValueForWorkers = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="w-full flex flex-col items-center justify-center mt-10 mb-30 px-3">
+                className="w-full flex flex-col items-center justify-center mt-24 px-3">
     
                 <motion.h1
                     initial={{ y: 20, opacity: 0 }}
@@ -18,7 +18,7 @@ const ValueForWorkers = () => {
                     Value for Workers
                 </motion.h1>
     
-                <div className='w-full max-w-3xl bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg px-2 lg:px-8 py-10'>
+                <div className='w-full max-w-[800px] bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg px-2 lg:px-14 py-10 lg:py-10'>
     
                     <div className='logo&heading flex lg:flex-row flex-col text-center md:text-start items-center justify-start gap-3'>
                         <img className='w-20' src={Images.icon1} alt="" />
@@ -27,30 +27,30 @@ const ValueForWorkers = () => {
                         </div>
                     </div>
     
-                    <div className='flex flex-col items-start mt-10 gap-5'>
-                        <div className="bg-[#c9d2e1] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                    <div className='flex flex-col items-center lg:items-start justify-center mt-10 gap-5'>
+                        <div className="bg-[#c9d2e1] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Bilingual, evidence-based wellness content.
                         </div>
-                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Access to real services (telehealth, childcare, counselling).
                         </div>
-                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Easy, mobile-first tools that fit into real schedules — just 10 minutes at a time.
                         </div>
-                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm">
+                        <div className="bg-[#c3cfe4] rounded-full py-2 px-4 text-sm tracking-wide font-semibold text-[#3c1d00] w-fit md:text-start text-center shadow-sm dreaming">
                             Inclusion for families, not just workers.
                         </div>
                     </div>
     
                 </div>
 
-                <div className='flex lg:flex-row flex-col items-center gap-10 mt-10 w-full lg:w-[50%] text-center'>
+                <div className='flex lg:flex-row flex-col items-center gap-10 mt-20 mb-20 w-full lg:w-[50%] text-center'>
                                 <motion.div 
                                 initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 1.5, delay: 0.3 }}
-                                className='flex flex-col gap-5 bg-white/20 backdrop-blur-lg border border-white/40 shadow-xl drop-shadow-lg px-10 py-7 rounded-full'>
-                                    <p className='italic font-medium text-sm lg:text-base'>“Since offering WellMe, our staff feels supported both on and off the job. It’s helped us build a stronger, more loyal team.”<span className='font-bold'> — Restaurant owner</span></p>
+                                className='flex flex-col items-center gap-5  px-10 py-7 rounded-full'>
+                                    <p className='italic font-medium text-sm lg:text-base lg:w-[70%]'>“Since offering WellMe, our staff feels supported both on and off the job. It’s helped us build a stronger, more loyal team.”<span className='font-bold'> — Restaurant owner</span></p>
                                 </motion.div>
                                 
                             </div>

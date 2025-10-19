@@ -42,7 +42,7 @@ const ForRestaurantsAndPartners = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.3 }}
-                    className="bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg flex flex-col items-center justify-center px-6 py-5 lg:py-10 w-full lg:w-[40%] h-full lg:h-[450px] ">
+                    className="bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg flex flex-col items-center justify-center px-6 py-7 lg:py-10 w-full lg:w-[40%] h-full lg:h-[450px] ">
                     <h1 className="text-xl lg:text-2xl mac font-semibold mb-2 tracking-wide text-[#3c1d00]">FOR PARTNERS</h1>
                     <p className="text-lg lg:text-xl font-semibold w-full lg:w-[80%] text-center mb-6 text-[#3c1d00]">
                         Grow with us by reaching thousands of hospitality workers and families.
@@ -77,7 +77,7 @@ const ForRestaurantsAndPartners = () => {
             </div>
 
             {/* For Restaurants Section */}
-            <div className="w-full lg:w-[80%] flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-9 mt-10">
+            <div className="w-full lg:w-[80%] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-9 mt-10">
                 {/* Left Image */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -97,7 +97,7 @@ const ForRestaurantsAndPartners = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 0.3 }}
-                    className="bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg flex flex-col items-center justify-center px-6 py-5 lg:py-10 w-full lg:w-[40%] h-full lg:h-[450px]"
+                    className="bg-white/20 backdrop-blur-lg rounded-[32px] border border-white/40 shadow-xl drop-shadow-lg flex flex-col items-center justify-center px-6 py-7 lg:py-10 w-full lg:w-[40%] h-full lg:h-[450px]"
                 >
                     <h1 className="text-xl lg:text-2xl mac font-semibold mb-2 tracking-wide text-[#3c1d00]">
                         FOR RESTAURANTS

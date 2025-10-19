@@ -15,7 +15,7 @@ const PreFooter = ({
   const single = !twoButtons
 
   return (
-    <div className="w-full flex items-center justify-center py-10 px-3">
+    <div className="w-full flex items-center justify-center py-5 px-3">
       <div className="bg-[#c6d1ed]/40 rounded-[24px] w-full mx-auto flex flex-col items-center justify-center py-12 px-4 shadow">
         <h2 className="text-2xl md:text-4xl font-bold text-[#3c1d00] text-center mb-4 tracking-wide mac w-full md:w-[50%]">
           {title}

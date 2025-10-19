@@ -64,10 +64,10 @@ const HomeLanding = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}
                 className="buttons flex items-center gap-2 lg:gap-5">
-                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
+                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-sm lg:text-base'>
                     Become a Partner
                 </button>
-                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border-2 border-black bg-transparent transition-colors duration-200 hover:bg-[#c6d1ed] hover:text-black text-base'>
+                <button className='cursor-pointer px-5 lg:px-9 py-3 font-semibold rounded-full border-2 border-black bg-transparent transition-colors duration-200 hover:bg-[#c6d1ed] hover:text-black text-sm lg:text-base'>
                     For Restaurants
                 </button>
             </motion.div>

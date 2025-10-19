@@ -59,7 +59,7 @@ const PartnersSegment = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
         className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center
-  gap-8 bg-white/30 backdrop-blur-lg rounded-4xl border border-white/40 shadow-xl px-6 lg:pl-16 lg:pr-12 lg:py-12 py-10 mt-8"
+  gap-8 bg-white/30 backdrop-blur-lg rounded-4xl border border-white/40 shadow-xl px-6 lg:pl-16 lg:pr-12 lg:py-12 py-10"
       >
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-center md:items-start justify-center">
