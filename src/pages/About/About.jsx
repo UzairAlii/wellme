@@ -2,7 +2,7 @@ import React from 'react'
 import AboutLanding from './AboutLanding'
 import ImagesSection from './ImagesSection'
 import OurStory from './OurStory'
-import OurValues from './ourValues'
+import OurValues from './OurValue'
 
 const About = () => {
   return (

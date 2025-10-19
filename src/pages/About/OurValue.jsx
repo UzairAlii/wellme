@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "motion/react";
 
-const OurValues = () => {
+const OurValue = () => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -65,4 +65,4 @@ const OurValues = () => {
     )
 }
 
-export default OurValues
+export default OurValue
