@@ -7,7 +7,7 @@ const OurVision = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className='flex flex-col items-center justify-center px-3 mt-20 mb-20 lg:mt-30 lg:mb-30'>
+            className='flex flex-col items-center justify-center px-3 mt-20 lg:mt-40 lg:mb-40'>
 
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}

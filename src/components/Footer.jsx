@@ -39,14 +39,8 @@ const Footer = () => {
             <li className='transition hover:text-[#c28347] openSauceRegular text-sm'>About</li>
           </NavLink>
 
-          <NavLink
-            to="/Newsletter"
-            className={({ isActive }) =>
-              isActive ? "text-[#c28347]" : "text-[#111] hover:text-[#bf7836]"
-            }
-          >
-            <li className='transition hover:text-[#c28347] openSauceRegular text-sm'>Newsletter</li>
-          </NavLink>
+            <li className='transition hover:text-[#c28347] openSauceRegular text-sm cursor-pointer'>Newsletter</li>
+          
         </ul>
         {/* Button */}
         <div className="flex items-center">

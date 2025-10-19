@@ -8,7 +8,7 @@ const OurTeam = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
-      className='flex flex-col items-center justify-center w-full gap-16 mt-20'
+      className='flex flex-col items-center justify-center w-full gap-16 mt-20 lg:mt-40'
     >
       {/* Heading */}
       <motion.h1
