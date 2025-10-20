@@ -13,7 +13,7 @@ const PartnersSegment = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className='h-fit w-full flex flex-col items-center justify-center gap-10 mt-30 px-3'>
+      className='h-fit w-full flex flex-col items-center justify-center gap-5 mt-30 px-3'>
 
       {language === "es" ? (
         <motion.h1
