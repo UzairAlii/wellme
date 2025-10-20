@@ -23,7 +23,7 @@ export const LanguageProvider = ({ children }) => {
       return newLang;
     });
 
-    setTimeout(() => setNotification(""), 5000);
+    setTimeout(() => setNotification(""), 6000);
   };
 
   const trans = language === "en" ? en : es;

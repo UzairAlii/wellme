@@ -72,6 +72,6 @@ body{
 }
 
 .animate-slideDown {
-  animation: slideDown 2s ease-in-out forwards;
+  animation: slideDown 6s ease-in-out forwards;
 }
 
