@@ -3,6 +3,8 @@ import { Images } from '../../assets/assets'
 import CountUp from 'react-countup'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { motion } from "motion/react";
+import { useLanguage } from '../../context/LanguageContext'
+
 import 'swiper/css'
 
 const AllImages = [
@@ -17,15 +19,19 @@ const AllImages = [
   Images.landing9,
 ]
 
-const stats = [
-  { value: 16, label1: 'HOSPITALITY WORKERS', label2: 'IN THE U.S.', quantity: "M+" },
-  { value: 900, label1: 'INDUSTRY POWERING', label2: 'OUR ECONOMY', prefix: '$', quantity: "B" },
-  { value: 70, label1: 'TURNOVER IN THE FIRST YEAR — THE', label2: 'HIGHEST OF ANY U.S. SECTOR', suffix: '%' },
-]
 
 const ImagesSection = () => {
   const sectionRef = useRef(null)
   const [startCount, setStartCount] = useState(false)
+
+
+  const { language, trans } = useLanguage()
+
+  const stats = [
+    { value: 16, label1: trans.hospitalityWorkers, label2: trans.inTheUS, quantity: "M+" },
+    { value: 900, label1: trans.industryPowering, label2: trans.ourEconomy, prefix: '$', quantity: "B" },
+    { value: 70, label1: trans.turnoverInTheFirstYearThe, label2: trans.highestOfAnyUSSector, suffix: '%' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -139,12 +145,36 @@ const ImagesSection = () => {
               {stat.quantity && <span>{stat.quantity}</span>}
               {stat.suffix && <span>{stat.suffix}</span>}
             </span>
-            <span className="dreaming mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
-              {stat.label1}
-            </span>
-            <span className="dreaming mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
-              {stat.label2}
-            </span>
+            {language === "es" ? (
+              <>
+                <span className="dreaming mt-2 text-center lg:w-full text-lg lg:text-[1.2vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label1}
+                </span>
+                <span className="dreaming mt-2 text-center lg:w-full text-lg lg:text-[1.2vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label2}
+                </span>
+              </>
+            ) : (
+              <>
+                {/* English — separate labels for desktop */}
+                <span className="dreaming hidden lg:block mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label1}
+                </span>
+
+                <span className="dreaming hidden lg:block mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label2}
+                </span>
+
+                {/* English — single label for mobile */}
+                <span className="dreaming block lg:hidden mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label1}
+                </span>
+                <span className="dreaming block lg:hidden mt-2 text-center lg:w-full text-xl lg:text-[1.5vw] font-semibold leading-none tracking-wider text-[#3c1d00]">
+                  {stat.label2}
+                </span>
+              </>
+            )}
+
           </motion.div>
         ))}
       </div>

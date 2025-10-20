@@ -1,7 +1,11 @@
 import React from 'react'
 import { motion } from "motion/react"
+import { useLanguage } from '../../context/LanguageContext'
 
 const OurVision = () => {
+
+    const { language, trans } = useLanguage()
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -15,16 +19,16 @@ const OurVision = () => {
                 transition={{ delay: 0.1, duration: 0.8 }}
                 className="mac uppercase text-2xl md:text-3xl font-bold tracking-wide text-[#3c1d00]"
             >
-                OUR vision
+                {trans.OurVisionHeading}
             </motion.h1>
 
-            <div className='w-full lg:w-[35%] bg-white/20 backdrop-blur-lg rounded-2xl shadow-xl border border-white/40 drop-shadow-lg px-5 lg:px-14 py-10 lg:py-12 mt-10'>
-                <p className='dreaming text-xl leading-tight block lg:hidden text-center'>To transform hospitality into an industry where workers and families are supported, valued, and equipped to thrive — creating a culture of joy, resilience, and sustainability that benefits everyone.</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>To transform hospitality into an </p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>industry where workers and families are</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>supported, valued, and equipped to thrive</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>— creating a culture of joy, resilience,</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>and sustainability that benefits everyone.</p>
+            <div className='w-full lg:w-[37%] bg-white/20 backdrop-blur-lg rounded-2xl shadow-xl border border-white/40 drop-shadow-lg px-5 lg:px-14 py-10 lg:py-12 mt-10 flex flex-col items-start justify-center'>
+                <p className='dreaming text-xl leading-tight block lg:hidden text-center'>{trans.OurVisionParaMobile}</p>
+                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaB}</p>
+                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParac}</p>
+                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaD}</p>
+                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>— {trans.OurVisionParaE}</p>
+                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaE}</p>
             </div>
 
         </motion.div>

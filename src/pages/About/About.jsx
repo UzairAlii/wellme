@@ -6,8 +6,12 @@ import OurValues from './OurValue'
 import OurTeam from './OurTeam'
 import OurVision from './OurVision'
 import PreFooter from '../../components/PreFooter'
+import { useLanguage } from '../../context/LanguageContext'
 
 const About = () => {
+
+  const { language, trans } = useLanguage()
+
   return (
     <div>
       <AboutLanding />
@@ -16,7 +20,7 @@ const About = () => {
       <OurValues />
       <OurTeam />
       <OurVision />
-      <PreFooter title={`Let’s Build the Future of Hospitality Together.`} titleWidth={"54%"} rightBtnText={"Connect with us"} />
+      <PreFooter title={trans.AboutPagePreFooterHeading} titleWidth={"54%"} rightBtnText={trans.ConnectWithUsBtn} />
     </div>
   )
 }

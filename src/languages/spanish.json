@@ -4,5 +4,216 @@
   "Partners" : "Fogonadura",
   "Restaurants": "Restaurantes",
   "About": "Acerca de",
-  "getStartedBtn" : "Empezar"
+  "NewsLetter": "Hoja informativa",
+  "getStartedBtn" : "Empezar",
+
+    "__COMMENT3": "============== HOME PAGE (Landing Page) ===================",
+
+  "headingMobile" : "La primera plataforma bilingüe de bienestar para trabajadores y familias del sector hotelero",
+  "headingA" : "El primer bienestar bilingüe",
+  "headingB" : "Plataforma para la hostelería",
+  "headingC" : "Trabajadores y familias",
+  
+  "paraMobile": "Colaboramos con proveedores de contenido y servicios para ofrecer herramientas transformadoras a los equipos de restaurantes y sus familias. Simple. Inclusivo. Impulsado por la comunidad.",
+  "paraA": "Nos asociamos con proveedores de contenido y servicios para brindar herramientas que cambian la vida para",
+  "paraB": "Equipos de restaurantes y sus familias. Sencillo. Inclusivo. Impulsado por la comunidad.",
+  
+  "BecomePartnerBtn" : "Conviértete en socio",
+  "ForRestaurantBtn" : "Para restaurantes",
+  
+  "__COMMENT4": "============= HOME PAGE (Images Section) ====================",
+  
+  "hospitalityWorkers" : "trabajadores de hostelería",
+  "inTheUS" : "en los estados unidos",
+  "industryPowering" : "potencia de la industria",
+  "ourEconomy" : "nuestra economía",
+  "turnoverInTheFirstYearThe" : "Volumen de negocios en el primer año — el",
+  "highestOfAnyUSSector" : "el más alto de cualquier sector de EE. UU.",
+  
+  "__COMMENT5": "============= HOME PAGE (For Partners & For Restaurants) ====================",
+  
+    "ForPandRHeadingMobile": "La hospitalidad es esencial. Es hora de apoyar a quienes la hacen posible.",
+  "ForPandRHeadingA": "La hospitalidad es esencial. Es hora de que...",
+  "ForPandRHeadingB": "Apoyar a las personas que lo hacen posible.",
+  
+  "__COMMENT6": "============= HOME PAGE (For Partners Box) ====================",
+  
+  "ForPartner" : "Para socio",
+  "ForPartnerPara" : "Crezca con nosotros llegando a miles de trabajadores y familias del sector hotelero.",
+  "ZeroCostToParticipate" : " Costo cero para participar",
+  "NewVisibilityandRevenue" : " Nueva visibilidad e ingresos",
+  "FirstMoverAdvantage" : " Ventaja del pionero",
+  
+  "__COMMENT7": "============= HOME PAGE (For Restaurants Box) ====================",
+  
+  "ForRestaurants" : "Para restaurantes",
+  "ForRestPara" : "Lleva bienestar a tu equipo y sus familias.",
+  "ReduceTurnoverandAbsenteeism" : "Reducir la rotación y el ausentismo",
+  "SimpleBilingualMobileFirstAccess" : "Acceso simple, bilingüe y móvil",
+  "StrengthenLoyaltyandRetention" : "Fortalecer la lealtad y la retención",
+  "ForRandPBottomBox1" : "WellMe es exactamente lo que nuestros equipos necesitaban: fácil, inclusivo y accesible para toda la familia.",
+  "RestaurantOperator" : " — Operadora de restaurante",
+  "ForRandPBottomBox2" : "Asociarnos con WellMe nos dio una nueva visibilidad y la oportunidad de generar un impacto real.",
+  "ServiceProvider" : " — Proveedor de servicios",
+
+  "__COMMENT8": "============= HOME PAGE (Pre Footer) ====================",
+
+  "HomePreFooterHeading" : "¿Listo para unirte a nosotros?",
+  "HomePreFooterDesc" : "Ya sea que sea socio o operador de un restaurante, WellMe le facilita comenzar.",
+  "ApplyAsPartnerBtn" : "Aplicar como socio",
+  "BringWellMeToYourTeamBtn" : "Incorpora WellMe a tu equipo",
+
+  "EndingFooterPara": "© 2025 El Método del Bienestar | Política de Privacidad | Términos y Condiciones | Contacto | Realiza la Evaluación de Salud Wellme",
+
+  
+  "__COMMENT9": "=============================================== PARTNERS PAGE ===============================================",
+  "__COMMENT10": "================================== PARTNERS LANDING PAGE ===============================",
+  
+  "PartnerLandingHeadingMobile" : "Crezca con nosotros. Llegue a miles de trabajadores y familias del sector hotelero.",
+  "PartnerLandingHeadingA" : "Crece con nosotros. Alcanza",
+  "PartnerLandingHeadingB" : "Miles de Hospitalidad",
+  "PartnerLandingHeadingC" : "Trabajadores y familias.",
+  "PartnersLandingParaMobile" : "Conviértete en socio fundador de WellMe y entrega tu contenido o servicios directamente a las personas que más los necesitan.",
+  "PartnersLandingParaA" : "Conviértete en socio fundador de WellMe y entrega tu contenido o",
+  "PartnersLandingParaB" : "servicios directamente a las personas que más los necesitan.",
+  
+  "__COMMENT11": "================================== PARTNERS (WHY PARTNERS) ===============================",
+  
+  "WhyPartnerHeading" : "Por qué asociarse con nosotras",
+  "WhyPartnerPointA" : "Acceda a una base de clientes masiva y desatendida.",
+  "WhyPartnerPointB" : "Participar es gratis, nosotros nos encargamos de todo.",
+  "WhyPartnerPointC" : "Crear confianza duradera para los trabajadores y familias hoteleras.",
+  "WhyPartnerPointD" : "Ventaja del pionero: ubicación privilegiada y visibilidad.",
+  
+  "__COMMENT12": "================================== PARTNERS (PARTNER SEGMENT) ===============================",
+
+  "PartnerSegmentHeading" : "Nuestros segmentos de socios",
+
+  "ContentProviderHeading" : "Proveedores de contenido",
+  "ContentProviderPara" : "Lleve su experiencia a un nuevo público. Desde fitness hasta mindfulness, desde educación financiera hasta crianza, su contenido se convierte en parte de una biblioteca bilingüe y adaptada a dispositivos móviles.",
+  "ContentProviderPointA" : "Tú creas → Nosotros adaptamos y traducimos → Trabajadores y familias acceden en cualquier momento.",
+  "ContentProviderPointB" : "Visibilidad, datos de participación y oportunidades de ingresos.",
+
+  "ServiceProviderHeading" : "Proveedores de servicios",
+  "ServiceProviderPara" : "Ofrezca sus servicios a una fuerza laboral del sector que ha estado desatendida durante demasiado tiempo. Desde telesalud hasta cuidado infantil, desde asesoramiento hasta herramientas financieras, su empresa obtiene acceso directo.",
+  "ServiceProviderPointA" : "Integramos tu servicio → Los trabajadores te descubren → Ganas nuevos clientes + insights.",
+  "ServiceProviderPointB" : "La única ventaja: no hay riesgos ni costes de adquisición.",
+
+  "HowItWorksHeading" : "Cómo funciona",
+
+  "PartnerPreFooterHeading" : "Ventaja del socio fundador",
+  "PartnerPreFooterPara" : "Sé el primero. Conseguir una posición privilegiada, adaptar la plataforma con nosotros y crecer a medida que crecemos.",
+
+  "JoinUsAsWellmePartnerBtn" : "Únase como socio fundador de WellMe.",
+
+    "__COMMENT13": "======================================== RESTAURANTS PAGE =====================================",
+  "__COMMENT14": "================================== RESTAURANTS LANDING PAGE ===============================",
+  
+  "RestLandingHeadingA" : "Bienestar que",
+  "RestLandingHeadingB" : "Fortalece tu",
+  "RestLandingHeadingC" : "Personal.",
+  "RestLandingParaMobile" : "Apoye a su personal. Reduzca la rotación de personal. Incluya a las familias. WellMe lo simplifica.",
+  "RestLandingParaA" : "Apoye a su personal. Reduzca la rotación. Incluya",
+  "RestLandingParaB" : " Familias. WellMe lo hace sencillo.",
+  
+  "__COMMENT15": "================================== The Hospitality Challenge ===============================",
+  
+  "HospitalityHeading" : "El desafío de la hospitalidad",
+  "HospitalityPointA" : "70% de facturación el primer año — de las más altas.",
+  "HospitalityPointB" : "Largas horas, mucho estrés y recursos limitados.",
+  "HospitalityPointC" : "La mayoría es bilingüe, pero el contenido de bienestar solo está en inglés.",
+  "HospitalityPointD" : "Las familias soportan la carga, pero rara vez se las incluye.",
+  
+  "__COMMENT16": "================================== Our Solution ===============================",
+  
+  "OurSolutionHeading" : "Nuestra solución",
+  "OurSolutionParaMobile" : "WellMe es la primera plataforma de bienestar bilingüe y móvil diseñada para equipos de hotelería y sus familias.",
+  "OurSolutionParaA" : "WellMe es la primera plataforma de bienestar bilingüe y móvil.",
+  "OurSolutionParaB" : "Diseñado para equipos de hospitalidad y sus familias.",
+  "OurSolutionPointA" : "Herramientas breves: fitness, atención plena, nutrición, crianza de los hijos, salud mental.",
+  "OurSolutionPointB" : "Un mercado de servicios confiables: telesalud, asesoramiento, cuidado infantil, gimnasios, herramientas financieras y más.",
+  "OurSolutionPointC" : "Impulsado por la comunidad, culturalmente relevante y accesible en cualquier momento y en cualquier lugar.",
+  
+  "__COMMENT17": "================================== Why This Matters for You ===============================",
+  
+  "WhyMattersHeading" : "Por qué esto es importante para usted",
+  "WhyMattersPointA" : "Reducir la costosa rotación y el ausentismo.",
+  "WhyMattersPointB" : "Genere lealtad y retención demostrando al personal y a las familias que le importan.",
+  "WhyMattersPointC" : "Proporcione a sus equipos un recurso diseñado para sus horarios, idiomas y necesidades.",
+  
+  "__COMMENT18": "================================== Value for Workers ===============================",
+
+  "ValueForWorkersHeading" : "Valor para las trabajadoras",
+  "ValueForWorkersPara" : "Al registrar tu restaurante, tu personal y sus familias obtienen:",
+  "ValueForWorkersPointA" : "Contenido de bienestar bilingüe basado en evidencia.",
+  "ValueForWorkersPointB" : "Acceso a servicios reales (telesalud, cuidado infantil, asesoramiento).",
+  "ValueForWorkersPointC" : "Herramientas fáciles de usar, que se adaptan a horarios reales y que se adaptan a dispositivos móviles: solo 10 minutos a la vez.",
+  "ValueForWorkersPointD" : "Inclusión para las familias, no solo para las trabajadoras.",
+
+  "ValueForWorkersBottomPara" : "Desde que ofrecemos WellMe, nuestro personal se siente apoyado tanto dentro como fuera del trabajo. Esto nos ha ayudado a construir un equipo más fuerte y leal.",
+  "RestaurantOwner" : "— Dueño del restaurante",
+
+  "RestaurantPagePreFooterHeading" : "¿Listo para apoyar a tu equipo?",
+  "BringWellMeToYourRestaurantBtn" : "Lleva WellMe a tu restaurante",
+
+  
+  "__COMMENT19": "======================================= ABOUT PAGE =============================================",
+  "__COMMENT20": "================================== ABOUT LANDING PAGE ===============================",
+  
+  "AboutLandingPageHeadingA" : "Nuestra Misión:",
+  "AboutLandingPageHeadingMobile" : "Transformar la hospitalidad a través del bienestar",
+  "AboutLandingPageHeadingB" : "Transformar la hostelería",
+  "AboutLandingPageHeadingC" : "A través del bienestar",
+  
+  "AboutLandingPageParaMobile" : "Creemos que las personas que impulsan la industria hotelera merecen acceso a la misma atención, apoyo y oportunidades que brindan a los demás.",
+  "AboutLandingPageA" : "Creemos en las personas que impulsan la industria hotelera",
+  "AboutLandingPageB" : "merecen acceso a la misma atención, apoyo y ",
+  "AboutLandingPageC" : "oportunidades que brindan a los demás.",
+  
+  "__COMMENT21": "================================== OUR STORY ===============================",
+  
+  "OurStoryHeading" : "Nuestra historia",
+  "OurStoryParaA" : "Los trabajadores de la hostelería son la columna vertebral de restaurantes, hoteles e innumerables negocios. Sin embargo, durante demasiado tiempo han estado desatendidos: enfrentando mucho estrés, largas jornadas y acceso limitado a herramientas de bienestar, a menudo en un idioma que no hablan. Las familias comparten esa carga, pero rara vez reciben el apoyo que necesitan.",
+  "OurStoryParaB" : "Creamos WellMe para cambiar eso.",
+  "OurStoryParaC" : "WellMe es la primera plataforma de bienestar bilingüe diseñada específicamente para equipos de hotelería y sus familias. Nuestra misión es simplificar el bienestar, hacerlo inclusivo y comunitario, ayudando a trabajadores y familias a desarrollar hábitos más saludables, sentirse apoyados y prosperar en el trabajo y en casa.",
+  
+  "__COMMENT22": "================================== OUR VALUES ===============================",
+  
+  "OurValuesHeading" : "Nuestras Valores",
+  "Accessibility" : "Accesibilidad",
+  "AccessibilityParaA" : "El bienestar debe ser de fácil acceso, en todos los ámbitos.",
+  "AccessibilityParaB" : "idioma, en cualquier dispositivo.",
+  "Community" : "Comunidad",
+  "CommunityParaA" : "Los trabajadores y las familias merecen redes de apoyo ",
+  "CommunityParaB" : "que los incluyan, no los excluyan.",
+  "EvidenceBased" : "Basado en evidencia",
+  "EvidenceBasedParaA" : "Todas las herramientas y recursos están basados ​​en",
+  "EvidenceBasedParaB" : "Ciencia y práctica probadas.",
+  "Respect" : "Respeto",
+  "RespectParaA" : "Honramos las contribuciones de la hospitalidad",
+  "RespectParaB" : "Trabajadoras con dignidad y empatía.",
+  "Sustainability" : "Sostenibilidad",
+  "SustainabilityParaA" : "Las personas más sanas crean sociedades más fuertes y sostenibles.",
+  "SustainabilityParaB" : "empresas y comunidades.",
+  
+  "__COMMENT23": "================================== OUR TEAM ===============================",
+  
+  "OurTeamHeading" : "Nuestro equipo",
+  "PersonAPara" : "Alan ha dedicado su carrera a crear soluciones para sectores desatendidos. Con WellMe, lidera la iniciativa para que el bienestar sea accesible para los más de 16 millones de personas que impulsan la hostelería en EE. UU.",
+  "PersonBPara" : "Ricardo es un estratega y operador experimentado con amplia experiencia en la creación de empresas en los sectores del bienestar, la tecnología y la comunidad. En WellMe, se centra en ampliar las alianzas y garantizar que la plataforma genere un impacto tangible tanto para los operadores como para los trabajadores.",
+  
+  "__COMMENT24": "================================== OUR VISION ===============================",
+
+  "OurVisionHeading" : "Nuestra visión",
+  "OurVisionParaMobile" : "Transformar la hospitalidad en una industria donde los trabajadores y las familias sean apoyados, valorados y equipados para prosperar, creando una cultura de alegría, resiliencia y sostenibilidad que beneficie a todos.",
+  "OurVisionParaA" : "Transformar la hospitalidad en una",
+  "OurVisionParaB" : "Industria donde los trabajadores y las familias están",
+  "OurVisionParac" : "apoyados, valorados y equipados para prosperar",
+  "OurVisionParaD" : "— creando una cultura de alegría y resiliencia,",
+  "OurVisionParaE" : "y una sostenibilidad que beneficie a todos.",
+
+  "AboutPagePreFooterHeading" : "Construyamos juntos el futuro de la hospitalidad.",
+  "ConnectWithUsBtn" : "Conecta con nosotras"
+
+
 }

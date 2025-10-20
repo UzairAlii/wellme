@@ -6,8 +6,12 @@ import Mobiles from '../../components/Mobiles'
 import PartnersSegment from './PartnersSegment'
 import HowItWorks from './HowItWorks'
 import PreFooter from '../../components/PreFooter'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Partners = () => {
+
+  const { language, trans } = useLanguage()
+
   return (
     <div>
       <PartnersLanding />
@@ -16,7 +20,7 @@ const Partners = () => {
       <Mobiles />
       <PartnersSegment />
       <HowItWorks />
-      <PreFooter title={" Founding Partner Advantage"} description={"Be among the first. Lock in preferred positioning, shape the platform with us, and grow as we scale."} leftBtnText={"Join Us as a Founding WellMe Partner"} rightBtnText={null}/>
+      <PreFooter title={trans.PartnerPreFooterHeading} titleWidth={"70%"} description={trans.PartnerPreFooterPara} leftBtnText={trans.JoinUsAsWellmePartnerBtn} rightBtnText={null}/>
     </div>
   )
 }

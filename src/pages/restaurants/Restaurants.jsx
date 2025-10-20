@@ -7,8 +7,12 @@ import OurSolution from './OurSolution'
 import WhyMatters from './WhyMatters'
 import ValueForWorkers from './ValueForWorkers'
 import PreFooter from '../../components/PreFooter'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Restaurants = () => {
+
+  const { language, trans } = useLanguage()
+
   return (
     <div>
       <RestLanding />
@@ -18,7 +22,7 @@ const Restaurants = () => {
       <OurSolution />
       <WhyMatters />
       <ValueForWorkers />
-      <PreFooter title={" Ready to Support Your Team?"} description={null} leftBtnText={"Bring WellMe to Your Restaurant"} rightBtnText={null} leftBtnColor={"#c28347"} leftBtnTextColor={"#fff"} />
+      <PreFooter title={trans.RestaurantPagePreFooterHeading} description={null} leftBtnText={trans.BringWellMeToYourRestaurantBtn} rightBtnText={null} leftBtnColor={"#c28347"} leftBtnTextColor={"#fff"} />
     </div>
   )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
 import { motion } from "motion/react"
 import { Images } from '../../assets/assets'
+import { useLanguage } from '../../context/LanguageContext'
 
 const OurTeam = () => {
+
+  const { language, trans } = useLanguage()
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +21,7 @@ const OurTeam = () => {
         transition={{ delay: 0.1, duration: 0.8 }}
         className="mac uppercase text-2xl md:text-3xl font-bold tracking-wide text-[#3c1d00]"
       >
-        OUR TEAM
+       {trans.OurTeamHeading}
       </motion.h1>
 
       {/* Member 1 */}
@@ -36,9 +40,7 @@ const OurTeam = () => {
             ALAN ZIZMOR — CEO & CO-FOUNDER
           </h3>
           <p className='text-[#111] text-base leading-tight max-w-xl openSauceRegular'>
-            Alan has spent his career building solutions for underserved industries.
-            With WellMe, he is leading the charge to make wellness accessible
-            for the 16M+ people powering hospitality in the U.S.
+            {trans.PersonAPara}
           </p>
         </div>
       </motion.div>
@@ -59,7 +61,7 @@ const OurTeam = () => {
             Ricardo Viso — Co-Founder
           </h3>
           <p className='text-[#111] text-base leading-tight max-w-xl openSauceRegular'>
-            Ricardo is a seasoned strategist and operator with a deep background in building ventures across wellness, technology, and community-driven businesses. His focus at WellMe is scaling partnerships and ensuring the platform delivers measurable impact for both operators and workers.
+            {trans.PersonBPara}
 
           </p>
         </div>

@@ -1,8 +1,217 @@
 {
-  "__COMMENT1": "----------------------------------------- HOME PAGE ---------------------------------------------------",
-  "__COMMENT2": "-------------- NAVBAR -------------------",
+  "__COMMENT1": "==================================================== HOME PAGE ===============================================",
+  "__COMMENT2": "========================= NAVBAR =========================",
   "Partners" : "Partners",
   "Restaurants": "Restaurants",
   "About": "About",
-  "getStartedBtn" : "Get Started"
+  "NewsLetter": "NewsLetter",
+  "getStartedBtn" : "Get Started",
+  
+  "__COMMENT3": "============== HOME PAGE (Landing Page) ===================",
+
+  "headingMobile" : " The First Bilingual Wellness Platform for Hospitality Workers & Families",
+  "headingA" : "The First Bilingual Wellness",
+  "headingB" : "Platform for Hospitality",
+  "headingC" : "Workers & Families",
+  
+  "paraMobile": "We partner with content and service providers to deliver life-changing tools for restaurant teams and their families. Simple. Inclusive. Community-driven.",
+  "paraA": "We partner with content and service providers to deliver life-changing tools for",
+  "paraB": "restaurant teams and their families. Simple. Inclusive. Community-driven.",
+  
+  "BecomePartnerBtn" : "Become a Partner",
+  "ForRestaurantBtn" : "For Restaurants",
+  
+  "__COMMENT4": "============= HOME PAGE (Images Section) ====================",
+  
+  "hospitalityWorkers" : "hospitality workers",
+  "inTheUS" : "in the U.S.",
+  "industryPowering" : "industry powering",
+  "ourEconomy" : "our economy",
+  "turnoverInTheFirstYearThe" : "turnover in the first year — the",
+  "highestOfAnyUSSector" : "highest of any U.S. sector",
+  
+  "__COMMENT5": "============= HOME PAGE (For Partners & For Restaurants) ====================",
+  
+  "ForPandRHeadingMobile": "Hospitality is essential. It’s time we support the people who make it possible.",
+  "ForPandRHeadingA": "Hospitality is essential. It’s time we",
+  "ForPandRHeadingB": "support the people who make it possible.",
+  
+  "__COMMENT6": "============= HOME PAGE (For Partners Box) ====================",
+  
+  "ForPartner" : "For Partner",
+  "ForPartnerPara" : " Grow with us by reaching thousands of hospitality workers and families.",
+  "ZeroCostToParticipate" : " Zero cost to participate",
+  "NewVisibilityandRevenue" : " New visibility & revenue",
+  "FirstMoverAdvantage" : " First-mover advantage",
+  
+  "__COMMENT7": "============= HOME PAGE (For Restaurants Box) ====================",
+  
+  "ForRestaurants" : "For Restaurants",
+  "ForRestPara" : "Bring wellness to your team and their families.",
+  "ReduceTurnoverandAbsenteeism" : "Reduce turnover & absenteeism",
+  "SimpleBilingualMobileFirstAccess" : "Simple, bilingual, mobile-first access",
+  "StrengthenLoyaltyandRetention" : "Strengthen loyalty & retention",
+  "ForRandPBottomBox1" : "WellMe is exactly what our teams needed — easy, inclusive, and accessible for the whole family.",
+  "RestaurantOperator" : " — Restaurant Operator",
+  "ForRandPBottomBox2" : "Partnering with WellMe gave us new visibility and a chance to make real impact.",
+  "ServiceProvider" : " — Service Provider",
+
+  "__COMMENT8": "============= HOME PAGE (Pre Footer) ====================",
+
+  "HomePreFooterHeading" : "Ready to join us?",
+  "HomePreFooterDesc" : "Whether you’re a partner or a restaurant operator, WellMe makes it easy to get started.",
+  "ApplyAsPartnerBtn" : "Apply as a Partner",
+  "BringWellMeToYourTeamBtn" : "Bring WellMe to Your Team",
+
+  "EndingFooterPara": "© 2025 The Wellness Method | Privacy Policy | Terms and Conditions | Contact | Take the wellme Health Assessment",
+
+
+  "__COMMENT9": "=============================================== PARTNERS PAGE ===============================================",
+  "__COMMENT10": "================================== PARTNERS LANDING PAGE ===============================",
+  
+  "PartnerLandingHeadingMobile" : "Grow with Us. Reach Thousands of Hospitality Workers & Families.",
+  "PartnerLandingHeadingA" : "Grow with Us. Reach ",
+  "PartnerLandingHeadingB" : "Thousands of Hospitality",
+  "PartnerLandingHeadingC" : "Workers & Families.",
+  "PartnersLandingParaMobile" : "Become a Founding WellMe Partner and deliver your content or services directly to the people who need them most.",
+  "PartnersLandingParaA" : "Become a Founding WellMe Partner and deliver your content or",
+  "PartnersLandingParaB" : "services directly to the people who need them most.",
+  
+  "__COMMENT11": "================================== PARTNERS (WHY PARTNERS) ===============================",
+  
+  "WhyPartnerHeading" : "Why Partner With Us",
+  "WhyPartnerPointA" : "Access a massive, underserved customer base.",
+  "WhyPartnerPointB" : "Zero cost to participate — we handle distribution, translation, and engagement.",
+  "WhyPartnerPointC" : "Build long-term credibility as a trusted voice for hospitality workers and families.",
+  "WhyPartnerPointD" : "First-mover advantage: prime placement and visibility.",
+  
+  "__COMMENT12": "================================== PARTNERS (PARTNER SEGMENT) ===============================",
+  
+  "PartnerSegmentHeading" : "Our Partner Segments",
+
+  "ContentProviderHeading" : "Content Providers",
+  "ContentProviderPara" : "Bring your expertise to a new audience. From fitness to mindfulness, financial literacy to parenting, your content becomes part of a bilingual, mobile-first library.",
+  "ContentProviderPointA" : "You create → We adapt & translate → Workers & families access anytime.",
+  "ContentProviderPointB" : "Visibility, engagement data, and revenue opportunities.",
+  
+  "ServiceProviderHeading" : "Service Providers",
+  "ServiceProviderPara" : "Offer your services to an industry workforce that’s been overlooked for too long. From telehealth to childcare, counselling to financial tools, your business gets direct access.",
+  "ServiceProviderPointA" : "We integrate your service → Workers discover you → You gain new customers + insights.",
+  "ServiceProviderPointB" : "Only upside: no risk, no acquisition costs.",
+  
+  "HowItWorksHeading" : "How It Works",
+  
+  "PartnerPreFooterHeading" : "Founding Partner Advantage",
+  "PartnerPreFooterPara" : "Be among the first. Lock in preferred positioning, shape the platform with us, and grow as we scale.",
+  "JoinUsAsWellmePartnerBtn" : "Join Us as a Founding WellMe Partner",
+  
+  "__COMMENT13": "======================================= RESTAURANTS PAGE =============================================",
+  "__COMMENT14": "================================== RESTAURANTS LANDING PAGE ===============================",
+  
+  "RestLandingHeadingA" : "Wellness That",
+  "RestLandingHeadingB" : "Strengthens Your",
+  "RestLandingHeadingC" : "Workforce.",
+  "RestLandingParaMobile" : "Support your staff. Reduce turnover. Include families. WellMe makes it simple.",
+  "RestLandingParaA" : "Support your staff. Reduce turnover. Include",
+  "RestLandingParaB" : " families. WellMe makes it simple.",
+  
+  "__COMMENT15": "================================== The Hospitality Challenge ===============================",
+  
+  "HospitalityHeading" : "The Hospitality Challenge",
+  "HospitalityPointA" : "70% turnover in the first year — one of the highest of any industry.",
+  "HospitalityPointB" : "Long hours, high stress, and limited resources.",
+  "HospitalityPointC" : "Majority bilingual workforce, but wellness content is usually English-only.",
+  "HospitalityPointD" : "Families bear the burden but are rarely included.",
+  
+  "__COMMENT16": "================================== Our Solution ===============================",
+  
+  "OurSolutionHeading" : "Our Solution",
+  "OurSolutionParaMobile" : "WellMe is the first bilingual, mobile-first wellness platform built for hospitality teams and their families.",
+  "OurSolutionParaA" : "WellMe is the first bilingual, mobile-first wellness platform.",
+  "OurSolutionParaB" : "built for hospitality teams and their families",
+  "OurSolutionPointA" : "Bite-sized tools: fitness, mindfulness, nutrition, parenting, mental health.",
+  "OurSolutionPointB" : "A marketplace of trusted services: telehealth, counselling, childcare, gyms, financial tools, and more.",
+  "OurSolutionPointC" : "Community-driven, culturally relevant, and accessible anytime, anywhere.",
+  
+  "__COMMENT17": "================================== Why This Matters for You ===============================",
+  
+  "WhyMattersHeading" : "Why This Matters for You",
+  "WhyMattersPointA" : "Reduce costly turnover and absenteeism.",
+  "WhyMattersPointB" : "Build loyalty and retention by showing staff and families you care.",
+  "WhyMattersPointC" : "Give your teams a resource designed for their schedules, languages, and needs.",
+  
+  "__COMMENT18": "================================== Value for Workers ===============================",
+
+  "ValueForWorkersHeading" : "Value for Workers",
+  "ValueForWorkersPara" : "When you sign up your restaurant, your staff and their families get:",
+  "ValueForWorkersPointA" : "Bilingual, evidence-based wellness content.",
+  "ValueForWorkersPointB" : "Access to real services (telehealth, childcare, counselling).",
+  "ValueForWorkersPointC" : "Easy, mobile-first tools that fit into real schedules — just 10 minutes at a time.",
+  "ValueForWorkersPointD" : "Inclusion for families, not just workers.",
+
+  "ValueForWorkersBottomPara" : "Since offering WellMe, our staff feels supported both on and off the job. It’s helped us build a stronger, more loyal team.",
+  "RestaurantOwner" : "— Restaurant owner",
+
+  "RestaurantPagePreFooterHeading" : "Ready to Support Your Team?",
+  "BringWellMeToYourRestaurantBtn" : "Bring WellMe to Your Restaurant",
+
+
+  "__COMMENT19": "======================================= ABOUT PAGE =============================================",
+  "__COMMENT20": "================================== ABOUT LANDING PAGE ===============================",
+  
+  "AboutLandingPageHeadingA" : "Our Mission:",
+  "AboutLandingPageHeadingMobile" : "Transform Hospitality Through Wellness",
+  "AboutLandingPageHeadingB" : "Transform Hospitality",
+  "AboutLandingPageHeadingC" : "Through Wellness",
+  
+  "AboutLandingPageParaMobile" : "We believe the people who power the hospitality industry deserve access to the same care, support, and opportunities they provide to others.",
+  "AboutLandingPageA" : "We believe the people who power the hospitality industry",
+  "AboutLandingPageB" : "deserve access to the same care, support, and ",
+  "AboutLandingPageC" : "opportunities they provide to others. ",
+  
+  "__COMMENT21": "================================== OUR STORY ===============================",
+  
+  "OurStoryHeading" : "Our Story",
+  "OurStoryParaA" : "Hospitality workers are the backbone of restaurants, hotels, and countless businesses. Yet for too long, they’ve been underserved — facing high stress, long hours, and limited access to wellness tools, often in a language they don’t speak. Families share that burden but rarely get the support they need.",
+  "OurStoryParaB" : "We created WellMe to change that.",
+  "OurStoryParaC" : "WellMe is the first bilingual wellness platform designed specifically for hospitality teams and their families. Our mission is to make wellness simple, inclusive, and community-driven — helping workers and families build healthier habits, feel supported, and thrive at work and at home.",
+  
+  "__COMMENT22": "================================== OUR VALUES ===============================",
+  
+  "OurValuesHeading" : "Our Values",
+  "Accessibility" : "Accessibility",
+  "AccessibilityParaA" : "Wellness should be easy to access, in every",
+  "AccessibilityParaB" : "language, on any device.",
+  "Community" : "Community",
+  "CommunityParaA" : "Workers and families deserve support networks ",
+  "CommunityParaB" : "that include them, not exclude them.",
+  "EvidenceBased" : "Evidence-Based",
+  "EvidenceBasedParaA" : "All tools and resources are grounded in ",
+  "EvidenceBasedParaB" : "proven science and practice.",
+  "Respect" : "Respect",
+  "RespectParaA" : "We honor the contributions of hospitality ",
+  "RespectParaB" : "workers with dignity and empathy.",
+  "Sustainability" : "Sustainability",
+  "SustainabilityParaA" : "Healthier people create stronger, more sustainable ",
+  "SustainabilityParaB" : "businesses and communities.",
+  
+  "__COMMENT23": "================================== OUR TEAM ===============================",
+  
+  "OurTeamHeading" : "Our Team",
+  "PersonAPara" : "Alan has spent his career building solutions for underserved industries. With WellMe, he is leading the charge to make wellness accessible for the 16M+ people powering hospitality in the U.S.",
+  "PersonBPara" : "Ricardo is a seasoned strategist and operator with a deep background in building ventures across wellness, technology, and community-driven businesses. His focus at WellMe is scaling partnerships and ensuring the platform delivers measurable impact for both operators and workers.",
+  
+  "__COMMENT24": "================================== OUR VISION ===============================",
+
+  "OurVisionHeading" : "Our vision",
+  "OurVisionParaMobile" : "To transform hospitality into an industry where workers and families are supported, valued, and equipped to thrive — creating a culture of joy, resilience, and sustainability that benefits everyone.",
+  "OurVisionParaA" : "To transform hospitality into an ",
+  "OurVisionParaB" : "industry where workers and families are",
+  "OurVisionParac" : "supported, valued, and equipped to thrive ",
+  "OurVisionParaD" : "— creating a culture of joy, resilience,",
+  "OurVisionParaE" : "and sustainability that benefits everyone.",
+
+  "AboutPagePreFooterHeading" : "Let’s Build the Future of Hospitality Together.",
+  "ConnectWithUsBtn" : "Connect with us"
+
 }

@@ -23,7 +23,7 @@ const ImagesSection = () => {
             transition={{ duration: 1.5 }}
             className="w-full py-7 px-2 md:px-5 flex flex-col items-center justify-center">
             {/* Images Row */}
-            <div className="w-full flex justify-center items-center mb-10">
+            <div className="w-full flex justify-center items-center">
 
                 {/* Desktop */}
                 <div className="hidden md:flex gap-8 justify-center w-full">
