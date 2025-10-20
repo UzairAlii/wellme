@@ -22,14 +22,19 @@ const OurVision = () => {
                 {trans.OurVisionHeading}
             </motion.h1>
 
-            <div className='w-full lg:w-[37%] bg-white/20 backdrop-blur-lg rounded-2xl shadow-xl border border-white/40 drop-shadow-lg px-5 lg:px-14 py-10 lg:py-12 mt-10 flex flex-col items-start justify-center'>
-                <p className='dreaming text-xl leading-tight block lg:hidden text-center'>{trans.OurVisionParaMobile}</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaB}</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParac}</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaD}</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>— {trans.OurVisionParaE}</p>
-                <p className='dreaming text-lg lg:text-xl leading-tight hidden lg:block'>{trans.OurVisionParaE}</p>
+            {language === "es" ? (
+            <div className='w-full lg:w-[35%] bg-white/20 backdrop-blur-lg rounded-2xl shadow-xl border border-white/40 drop-shadow-lg px-5 lg:px-14 py-10 lg:py-12 mt-10 flex items-start justify-center'>
+                <p className='dreaming text-xl leading-tight block'>{trans.OurVisionParaMobile}</p>
             </div>
+
+            ) : (
+
+            <div className='w-full lg:w-[35%] bg-white/20 backdrop-blur-lg rounded-2xl shadow-xl border border-white/40 drop-shadow-lg px-5 lg:px-14 py-10 lg:py-12 mt-10 flex items-start justify-center'>
+                <p className='dreaming text-xl leading-tight block'>{trans.OurVisionParaMobile}</p>
+            </div>
+
+            )}
+
 
         </motion.div>
     )
