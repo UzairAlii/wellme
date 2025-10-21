@@ -10,7 +10,11 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const Partners = () => {
 
-  const { language, trans } = useLanguage()
+  const { trans } = useLanguage()
+
+    const handleLeftClick = () => {
+    window.open('https://forms.gle/LQXUaqPgn85Y9uHW6', '_blank')
+  }
 
   return (
     <div>
@@ -20,7 +24,7 @@ const Partners = () => {
       <Mobiles />
       <PartnersSegment />
       <HowItWorks />
-      <PreFooter title={trans.PartnerPreFooterHeading} titleWidth={"70%"} description={trans.PartnerPreFooterPara} leftBtnText={trans.JoinUsAsWellmePartnerBtn} rightBtnText={null}/>
+      <PreFooter title={trans.PartnerPreFooterHeading} onLeftClick={handleLeftClick} titleWidth={"70%"} description={trans.PartnerPreFooterPara} leftBtnText={trans.JoinUsAsWellmePartnerBtn} rightBtnText={null}/>
     </div>
   )
 }

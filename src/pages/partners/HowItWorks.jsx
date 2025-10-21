@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const HowItWorks = () => {
 
-  const { language, trans } = useLanguage()
+  const { trans } = useLanguage()
 
   return (
     <div className="relative w-full min-h-[700px] flex flex-col items-center justify-center py-10 mt-20">

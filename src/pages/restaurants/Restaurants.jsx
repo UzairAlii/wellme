@@ -11,7 +11,11 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const Restaurants = () => {
 
-  const { language, trans } = useLanguage()
+  const { trans } = useLanguage()
+
+      const handleLeftClick = () => {
+    window.open('https://forms.gle/x7CNBWaRR7nWvSAB7', '_blank')
+  }
 
   return (
     <div>
@@ -22,7 +26,7 @@ const Restaurants = () => {
       <OurSolution />
       <WhyMatters />
       <ValueForWorkers />
-      <PreFooter title={trans.RestaurantPagePreFooterHeading} description={null} leftBtnText={trans.BringWellMeToYourRestaurantBtn} rightBtnText={null} leftBtnColor={"#c28347"} leftBtnTextColor={"#fff"} />
+      <PreFooter title={trans.RestaurantPagePreFooterHeading} onLeftClick={handleLeftClick} description={null} leftBtnText={trans.BringWellMeToYourRestaurantBtn} rightBtnText={null} leftBtnColor={"#c28347"} leftBtnTextColor={"#fff"} />
     </div>
   )
 }

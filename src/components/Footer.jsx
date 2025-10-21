@@ -1,11 +1,38 @@
-import React from 'react'
 import { Images } from '../assets/assets'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
+import { useEffect, useState } from 'react'
 
 const Footer = () => {
 
   const { language, trans } = useLanguage()
+
+    const [scrollAfterNavigate, setScrollAfterNavigate] = useState(false)
+  
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+      if (location.pathname === '/' && scrollAfterNavigate) {
+        const section = document.getElementById('forPartnersAndRestaurants')
+        if (section) section.scrollIntoView({ behavior: 'smooth' })
+        setScrollAfterNavigate(false)
+      }
+    }, [location.pathname, scrollAfterNavigate])
+  
+    const handleGetStarted = () => {
+      if (location.pathname === '/Partners') {
+        window.open('https://forms.gle/LQXUaqPgn85Y9uHW6', '_blank')
+      } else if (location.pathname === '/Restaurants') {
+        window.open('https://forms.gle/x7CNBWaRR7nWvSAB7', '_blank')
+      } else if (location.pathname === '/About') {
+        navigate('/')
+        setScrollAfterNavigate(true)
+      } else {
+        const section = document.getElementById('forPartnersAndRestaurants')
+        if (section) section.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
 
   return (
     <footer className="w-full py-3 bg-transparent">
@@ -49,12 +76,7 @@ const Footer = () => {
         {/* Button */}
         <div className="flex items-center">
           <button
-            onClick={() => {
-              const section = document.getElementById('forPartnersAndRestaurants');
-              if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
+            onClick={handleGetStarted}
             className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm openSauceRegular font-semibold cursor-pointer hover:bg-[#bf7836]'
           >
             {trans.getStartedBtn}

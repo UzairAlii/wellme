@@ -10,7 +10,16 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const About = () => {
 
-  const { language, trans } = useLanguage()
+  const { trans } = useLanguage()
+
+   const handleRightClick = () => {
+    // Create a temporary anchor tag and click it
+    const link = document.createElement('a')
+    link.href = "mailto:hello@thewellnessmethod.com?subject=Hello&body=I would like to connect"
+    link.target = "_blank"
+    link.click()
+  }
+
 
   return (
     <div>
@@ -20,7 +29,7 @@ const About = () => {
       <OurValues />
       <OurTeam />
       <OurVision />
-      <PreFooter title={trans.AboutPagePreFooterHeading} titleWidth={"54%"} rightBtnText={trans.ConnectWithUsBtn} />
+      <PreFooter title={trans.AboutPagePreFooterHeading} onRightClick={handleRightClick} titleWidth={"54%"} rightBtnText={trans.ConnectWithUsBtn} />
     </div>
   )
 }

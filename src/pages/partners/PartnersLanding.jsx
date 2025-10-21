@@ -86,13 +86,18 @@ const PartnersLanding = () => {
 
 
       </div>
-      <motion.button
-        initial={{ y: 20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className='cursor-pointer px-5 lg:px-9 py-3 openSauceBold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
-        {trans.BecomePartnerBtn}
-      </motion.button>
+      <a href="https://forms.gle/x7CNBWaRR7nWvSAB7"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: 'none', color: 'inherit' }}>
+        <motion.button
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.8 }}
+          className='cursor-pointer px-5 lg:px-9 py-3 openSauceBold rounded-full border border-[#c6d1ed] bg-[#c6d1ed] transition-colors duration-200 hover:bg-transparent hover:border-black hover:text-[#111] text-base'>
+          {trans.BecomePartnerBtn}
+        </motion.button>
+      </a>
 
     </motion.div>
   )

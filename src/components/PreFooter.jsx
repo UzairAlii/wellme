@@ -1,3 +1,6 @@
+import { useLocation } from "react-router-dom"
+import { useState } from "react"
+import { motion } from "motion/react";
 
 const PreFooter = ({
   title,
@@ -11,10 +14,74 @@ const PreFooter = ({
   leftBtnColor,
   rightBtnColor,
 }) => {
+  const location = useLocation()
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Email is invalid';
+    }
+    if (!formData.message.trim()) newErrors.message = 'Message is required';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    if (!validate()) return;
+
+    setIsSubmitting(true);
+
+    const dataToSend = new FormData();
+    dataToSend.append('access_key', '0cae66bc-91e9-4699-8c54-4b3f190001b9');
+    dataToSend.append('name', formData.name);
+    dataToSend.append('email', formData.email);
+    dataToSend.append('message', formData.message);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: dataToSend,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setToastMessage('Form submitted successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setToastMessage('Submission failed: ' + data.message);
+      }
+    } catch (error) {
+      setToastMessage('An error occurred while submitting the form.');
+    } finally {
+      setIsSubmitting(false);
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 4000);
+    }
+  };
+
   const hasLeft = Boolean(leftBtnText)
   const hasRight = Boolean(rightBtnText)
   const twoButtons = hasLeft && hasRight
-  const single = !twoButtons
 
   return (
     <div className="w-full flex items-center justify-center py-5 px-3">
@@ -29,40 +96,113 @@ const PreFooter = ({
           {description}
         </p>
 
-        {/* ✅ Buttons Section */}
-        <div
-          className={`w-full sm:w-[40%] md:w-[50%] flex items-center justify-center ${
-            twoButtons ? 'flex-col md:flex-row gap-2' : 'flex-col'
-          }`}
-        >
-          {hasLeft && (
-            <button
-              style={{
-                backgroundColor: leftBtnColor || '#b0bfe6',
-                color: leftBtnTextColor || '#111',
-              }}
-              className={`px-10 py-3 rounded-full openSauceBold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md`}
-              onClick={onLeftClick}
-              type="button"
-            >
-              {leftBtnText}
-            </button>
-          )}
+        {/* Show buttons only if NOT on About page */}
+        {location.pathname !== "/About" ? (
+          <div
+            className={`w-full sm:w-[40%] md:w-[50%] flex items-center justify-center ${twoButtons ? 'flex-col md:flex-row gap-2' : 'flex-col'
+              }`}
+          >
+            {hasLeft && (
+              <button
+                style={{
+                  backgroundColor: leftBtnColor || '#b0bfe6',
+                  color: leftBtnTextColor || '#111',
+                }}
+                className="px-10 py-3 cursor-pointer rounded-full openSauceBold text-[#3c1d00] shadow hover:opacity-90 transition text-sm lg:text-md"
+                onClick={onLeftClick}
+                type="button"
+              >
+                {leftBtnText}
+              </button>
+            )}
 
-          {hasRight && (
-            <button
-              style={{
-                backgroundColor: rightBtnColor || 'transparent',
-                border: rightBtnColor ? 'none' : '2px solid #111',
-              }}
-              className={`px-10 py-3 rounded-full openSauceBold text-[#111] shadow hover:opacity-90 transition text-sm lg:text-md`}
-              onClick={onRightClick}
-              type="button"
+            {hasRight && (
+              <button
+                style={{
+                  backgroundColor: rightBtnColor || 'transparent',
+                  border: rightBtnColor ? 'none' : '2px solid #111',
+                }}
+                className="px-10 py-3 cursor-pointer rounded-full openSauceBold text-[#111] shadow hover:opacity-90 transition text-sm lg:text-md"
+                onClick={onRightClick}
+                type="button"
+              >
+                {rightBtnText}
+              </button>
+            )}
+          </div>
+        ) : (
+          // Show contact form ONLY on About page
+          <form
+            onSubmit={onSubmit}
+            className="gap-8 w-full md:w-1/2 flex items-center justify-center flex-col p-8 rounded-2xl shadow-lg"
+          >
+            <div className="flex md:flex-row flex-col items-center justify-center gap-6 w-full">
+              <div className="flex flex-col w-full gap-4">
+                <motion.input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition ${errors.name ? "border-red-500" : "border-[#00000098]  openSauceMedium"
+                    }`}
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+                {errors.name && <p className="text-red-500 text-sm -mt-2">{errors.name}</p>}
+              </div>
+
+              <div className="flex flex-col w-full gap-4">
+                <motion.input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition ${errors.email ? "border-red-500" : "border-[#00000098]  openSauceMedium"
+                    }`}
+                  initial={{ y: 40, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.3, duration: 1 }}
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+                {errors.email && <p className="text-red-500 text-sm -mt-2">{errors.email}</p>}
+              </div>
+            </div>
+
+            <div className="w-full mt-4">
+              <motion.textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition resize-none ${errors.message ? "border-red-500" : "border-[#00000098] openSauceMedium"
+                  }`}
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.9, duration: 1 }}
+                value={formData.message}
+                onChange={handleChange}
+              />
+              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            </div>
+
+            <motion.button
+              type="submit"
+              disabled={isSubmitting}
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.5 }}
+              className="px-12 py-3 cursor-pointer rounded-full text-black shadow-lg active:scale-95 transition-all text-sm lg:text-md w-fit self-center flex items-center justify-center gap-2 border-2 border-black openSauceMedium"
             >
-              {rightBtnText}
-            </button>
-          )}
-        </div>
+              {isSubmitting ? (
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              ) : (
+                "Send Message"
+              )}
+            </motion.button>
+          </form>
+
+        )}
       </div>
     </div>
   )

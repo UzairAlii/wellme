@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const RestLanding = () => {
 
-    const { language, trans } = useLanguage()
+    const { trans } = useLanguage()
 
     return (
         <motion.div
@@ -57,13 +57,18 @@ const RestLanding = () => {
 
             </div>
 
-            <motion.button
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.8 }}
-                className='cursor-pointer px-5 lg:px-9 py-3 rounded-full border border-[#c6d1ed] bg-[#c28347] transition-colors duration-200 hover:bg-transparent hover:border-black openSauceBold text-white hover:text-black text-base'>
-                {trans.BringWellMeToYourTeamBtn}
-            </motion.button>
+            <a href="https://forms.gle/x7CNBWaRR7nWvSAB7"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'inherit' }}>
+                <motion.button
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 1.5, duration: 0.8 }}
+                    className='cursor-pointer px-5 lg:px-9 py-3 rounded-full border border-[#c6d1ed] bg-[#c28347] transition-colors duration-200 hover:bg-transparent hover:border-black openSauceBold text-white hover:text-black text-base'>
+                    {trans.BringWellMeToYourTeamBtn}
+                </motion.button>
+            </a>
 
         </motion.div>
     )

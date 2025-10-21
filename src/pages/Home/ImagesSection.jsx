@@ -56,7 +56,7 @@ const ImagesSection = () => {
 
       <div className="w-full flex justify-center items-center mb-10">
         <div className="w-full px-2">
-          {/* Desktop view (Static row) */}
+          {/* Desktop view */}
           <div className="hidden lg:flex justify-center gap-2">
             {AllImages.map((img, idx) => (
               <motion.div

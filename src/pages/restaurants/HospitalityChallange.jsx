@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const HospitalityChallange = () => {
 
-    const { language, trans } = useLanguage()
+    const { trans } = useLanguage()
 
     const points = [
         trans.HospitalityPointA,
@@ -33,9 +33,14 @@ const HospitalityChallange = () => {
                         </li>
                     ))}
                 </ul>
-                <button className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm lg:text-base openSauceBold cursor-pointer hover:bg-[#bf7836] mt-8'>
-                    {trans.BringWellMeToYourTeamBtn}
-                </button>
+                <a href="https://forms.gle/x7CNBWaRR7nWvSAB7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <button className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm lg:text-base openSauceBold cursor-pointer hover:bg-[#bf7836] mt-8'>
+                        {trans.BringWellMeToYourTeamBtn}
+                    </button>
+                </a>
             </div>
 
         </motion.div>

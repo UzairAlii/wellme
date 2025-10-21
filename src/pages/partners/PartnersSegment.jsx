@@ -56,10 +56,20 @@ const PartnersSegment = () => {
               {trans.ContentProviderPointB}
             </div>
           </div>
-          <button className="bg-[#c6d1ed] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceBold">
-            {trans.BecomePartnerBtn}
-          </button>
+
+          {/* PARTNERS FORM */}
+          <a href="https://forms.gle/LQXUaqPgn85Y9uHW6"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: 'inherit' }}>
+            <button className="bg-[#c6d1ed] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceBold">
+              {trans.BecomePartnerBtn}
+            </button>
+          </a>
         </div>
+
+
+
         {/* Right Image */}
         <div className="flex items-center justify-center">
           <img
@@ -106,10 +116,19 @@ const PartnersSegment = () => {
             </div>
           </div>
 
-          <button className="bg-[#efc0d4] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#e3c1d1] transition openSauceBold">
-            {trans.BecomePartnerBtn}
-          </button>
+          {/* PARTNERS FORM */}
+
+          <a href="https://forms.gle/LQXUaqPgn85Y9uHW6"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: 'inherit' }}>
+            <button className="bg-[#efc0d4] py-3 px-5 cursor-pointer rounded-full w-full max-w-[220px] text-[#3c1d00] text-base shadow hover:bg-[#e3c1d1] transition openSauceBold">
+              {trans.BecomePartnerBtn}
+            </button>
+          </a>
         </div>
+
+
 
         {/* Right Image */}
         <div className="flex items-center justify-center">

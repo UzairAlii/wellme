@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const ValueForWorkers = () => {
 
-    const { language, trans } = useLanguage()
+    const { trans } = useLanguage()
 
   return (
     <motion.div

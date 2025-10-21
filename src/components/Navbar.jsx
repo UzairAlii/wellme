@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Images } from '../assets/assets'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -11,7 +12,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [isScroll, setIsScroll] = useState(false)
 
+  const [scrollAfterNavigate, setScrollAfterNavigate] = useState(false)
 
+
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +29,28 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (location.pathname === '/' && scrollAfterNavigate) {
+      const section = document.getElementById('forPartnersAndRestaurants')
+      if (section) section.scrollIntoView({ behavior: 'smooth' })
+      setScrollAfterNavigate(false)
+    }
+  }, [location.pathname, scrollAfterNavigate])
+
+  const handleGetStarted = () => {
+    if (location.pathname === '/Partners') {
+      window.open('https://forms.gle/LQXUaqPgn85Y9uHW6', '_blank')
+    } else if (location.pathname === '/Restaurants') {
+      window.open('https://forms.gle/x7CNBWaRR7nWvSAB7', '_blank')
+    } else if (location.pathname === '/About') {
+      navigate('/')
+      setScrollAfterNavigate(true)
+    } else {
+      const section = document.getElementById('forPartnersAndRestaurants')
+      if (section) section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <div className='fixed top-0 left-0 w-full z-20'>
@@ -47,12 +74,7 @@ const Navbar = () => {
             } to={"/About"}><li className='transition hover:text-[#c28347] openSauceRegular text-sm'>{trans.About}</li></NavLink>
           </ul>
           <button
-            onClick={() => {
-              const section = document.getElementById('forPartnersAndRestaurants');
-              if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
+            onClick={handleGetStarted}
             className='bg-[#c28347] rounded-full py-3 px-8 text-white text-sm openSauceRegular font-semibold cursor-pointer hover:bg-[#bf7836]'
           >
             {trans.getStartedBtn}
@@ -78,12 +100,7 @@ const Navbar = () => {
           </NavLink>
           <div className='flex items-center'>
             <button
-              onClick={() => {
-                const section = document.getElementById('forPartnersAndRestaurants');
-                if (section) {
-                  section.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={handleGetStarted}
               className='bg-[#c28347] rounded-full py-3 px-7 text-white text-sm openSauceRegular font-medium cursor-pointer hover:bg-[#bf7836]'
             >
               {trans.getStartedBtn}
@@ -106,7 +123,7 @@ const Navbar = () => {
           ></div>
         )}
 
-        {/* Slide-in Menu */}
+        {/* Slide in Menu */}
         <div
           className={`fixed top-0 right-0 h-full w-[80vw] max-w-xs bg-[#f7faff] shadow-lg z-50 flex flex-col pt-20 px-6 transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'
             }`}

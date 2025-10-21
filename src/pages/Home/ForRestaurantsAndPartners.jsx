@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 
 const ForRestaurantsAndPartners = () => {
 
-      const { language, trans } = useLanguage()
+    const { trans } = useLanguage()
 
     return (
         <motion.div
@@ -62,10 +62,23 @@ const ForRestaurantsAndPartners = () => {
                             {trans.FirstMoverAdvantage}
                         </div>
                     </div>
-                    <button className="bg-[#c6d1ed] py-3 px-10 cursor-pointer rounded-full mt-7 text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceBold">
-                        {trans.BecomePartnerBtn}
-                    </button>
+
+                    {/* FOR PARTNER FORM */}
+                    <a href="https://forms.gle/LQXUaqPgn85Y9uHW6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <button className="bg-[#c6d1ed] py-3 px-10 cursor-pointer rounded-full mt-7 text-[#3c1d00] text-base shadow hover:bg-[#b3c3e6] transition openSauceBold">
+
+                            {trans.BecomePartnerBtn}
+
+                        </button>
+                    </a>
                 </motion.div>
+
+
+
+
                 {/* Right Image */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -120,11 +133,22 @@ const ForRestaurantsAndPartners = () => {
                             {trans.StrengthenLoyaltyandRetention}
                         </div>
                     </div>
-                    <button className="bg-transparent border-2 border-black py-3 px-10 cursor-pointer openSauceBold rounded-full mt-7 text-[#3c1d00] text-base shadow transition">
-                        {trans.ForRestaurants}
-                    </button>
+
+                    {/* FOR RESTAURANT FORM */}
+                    <a href="https://forms.gle/x7CNBWaRR7nWvSAB7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <button className="bg-transparent border-2 border-black py-3 px-10 cursor-pointer openSauceBold rounded-full mt-7 text-[#3c1d00] text-base shadow transition">
+
+                            {trans.ForRestaurants}
+
+                        </button>
+                    </a>
                 </motion.div>
             </div>
+
+
 
 
             <div className='flex lg:flex-row flex-col items-center gap-10 mt-10 w-full lg:w-[80%]'>
