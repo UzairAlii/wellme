@@ -86,7 +86,7 @@ const PartnersLanding = () => {
 
 
       </div>
-      <a href="https://forms.gle/x7CNBWaRR7nWvSAB7"
+      <a href="https://forms.gle/LQXUaqPgn85Y9uHW6"
         target="_blank"
         rel="noopener noreferrer"
         style={{ textDecoration: 'none', color: 'inherit' }}>
