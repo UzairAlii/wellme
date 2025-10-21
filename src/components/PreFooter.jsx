@@ -195,7 +195,7 @@ const PreFooter = ({
               className="px-12 py-3 cursor-pointer rounded-full text-black shadow-lg active:scale-95 transition-all text-sm lg:text-md w-fit self-center flex items-center justify-center gap-2 border-2 border-black openSauceMedium"
             >
               {isSubmitting ? (
-                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
               ) : (
                 "Send Message"
               )}
