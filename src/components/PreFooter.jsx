@@ -84,8 +84,8 @@ const PreFooter = ({
   const twoButtons = hasLeft && hasRight
 
   return (
-    <div className="w-full flex items-center justify-center py-5 px-3">
-      <div className="bg-[#c6d1ed]/40 rounded-[24px] w-full mx-auto flex flex-col items-center justify-center py-28 px-4 shadow">
+    <div className="w-full flex items-center justify-center py-5 px-3 md:px-0">
+      <div className="bg-[#c6d1ed]/40 rounded-[24px] w-[98%] mx-auto flex flex-col items-center justify-center py-28 px-4 shadow">
         <h2
           className="text-2xl lg:text-5xl font-bold text-[#3c1d00] text-center mb-4 tracking-wide mac"
           style={{ width: titleWidth || '50%' }}

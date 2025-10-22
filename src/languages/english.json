@@ -63,7 +63,13 @@
   "ApplyAsPartnerBtn" : "Apply as a Partner",
   "BringWellMeToYourTeamBtn" : "Bring WellMe to Your Team",
 
-  "EndingFooterPara": "© 2025 The Wellness Method | Privacy Policy | Terms and Conditions | Contact | Take the wellme Health Assessment",
+  "EndingFooterPara": "© 2025 The Wellness Method",
+
+  "wellmeHealthAssessment" : "Wellme Health Assessment",
+  "TermsAndConditions" : "Terms and Conditions",
+  "PrivacyPolicy" : "Privacy Policy",
+  "Contact" : "Contact",
+
 
 
   "__COMMENT9": "=============================================== PARTNERS PAGE ===============================================",

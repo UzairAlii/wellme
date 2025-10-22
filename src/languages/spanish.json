@@ -9,7 +9,7 @@
 
     "__COMMENT3": "============== HOME PAGE (Landing Page) ===================",
 
-  "headingMobile" : "La primera plataforma bilingüe de bienestar para trabajadores y familias del sector hotelero",
+  "headingMobile" : "El primer bienestar bilingüe Plataforma para la hostelería Trabajadores y familias",
   "headingA" : "El primer bienestar bilingüe",
   "headingB" : "Plataforma para la hostelería",
   "headingC" : "Trabajadores y familias",
@@ -63,7 +63,12 @@
   "ApplyAsPartnerBtn" : "Aplicar como socio",
   "BringWellMeToYourTeamBtn" : "Incorpora WellMe a tu equipo",
 
-  "EndingFooterPara": "© 2025 El Método del Bienestar | Política de Privacidad | Términos y Condiciones | Contacto | Realiza la Evaluación de Salud Wellme",
+  "EndingFooterPara": "© 2025 El Método del Bienestar ",
+
+    "wellmeHealthAssessment" : "Realiza la Evaluación de Salud Wellme",
+  "TermsAndConditions" : "Términos y Condiciones",
+  "PrivacyPolicy" : "Política de Privacidad",
+  "Contact" : "Contacto",
 
   
   "__COMMENT9": "=============================================== PARTNERS PAGE ===============================================",

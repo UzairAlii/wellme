@@ -36,13 +36,13 @@ const Footer = () => {
 
   return (
     <footer className="w-full py-3 bg-transparent">
-      <div className="bg-[#c6d1ed] rounded-[18px] w-full mx-auto flex flex-col md:flex-row items-center justify-between px-5 py-4 md:py-3 shadow">
+      <div className="bg-[#c6d1ed] rounded-[18px] w-[98%] mx-auto flex flex-col md:flex-row items-center justify-between px-5 py-4 md:py-3 shadow">
         {/* Logo */}
         <div className="flex items-center mb-3 md:mb-0">
           <img src={Images.brownLogo} alt="Footer Logo" className="w-24" />
         </div>
         {/* Links */}
-        <ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8 font-semibold text-sm mb-3 md:mb-0 lg:-mr-12">
+        <ul className="flex flex-col md:flex-row items-center gap-6 md:gap-8 font-semibold text-sm my-8 md:my-0 md:mb-0 lg:-mr-12">
           <NavLink
             to="/Partners"
             className={({ isActive }) =>
@@ -84,8 +84,12 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom copyright and links */}
-      <div className="w-full max-w-6xl mx-auto text-[10px] lg:text-sm text-[#222] text-center mt-2 px-3 openSauceRegular">
-        {trans.EndingFooterPara}
+      <div className="w-full max-w-6xl mx-auto text-[10px] lg:text-sm text-[#222] text-center mt-2 px-3 py-[7px] openSauceRegular">
+        {trans.EndingFooterPara} | 
+        <a className='hover:underline' href="https://74e2-alan.systeme.io/privacy-policy" target='_blank'> {trans.PrivacyPolicy}</a> | 
+        <a className='hover:underline' href="https://74e2-alan.systeme.io/terms" target='_blank'> {trans.TermsAndConditions}</a> | 
+        <a className='hover:underline' href=""> {trans.Contact}</a> | 
+        <a className='hover:underline' href="https://74e2-alan.systeme.io/assessment" target='_blank'> {trans.wellmeHealthAssessment}</a>
       </div>
     </footer>
   )
