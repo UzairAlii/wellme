@@ -9,6 +9,9 @@ import { Images } from './assets/assets'
 import PreFooter from './components/PreFooter'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import Welcome from './pages/Welcome/Welcome'
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions'
+import PrivacyPolicy from './pages/PrivacyPolicy/PP'
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
         <Route path='/About' element={<About />} />
         <Route path='/Partners' element={<Partners />} />
         <Route path='/Restaurants' element={<Restaurants />} />
+        <Route path='/Welcome' element={<Welcome />} />
+        <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
 

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 const Footer = () => {
 
-  const { language, trans } = useLanguage()
+  const { trans } = useLanguage()
 
     const [scrollAfterNavigate, setScrollAfterNavigate] = useState(false)
   

@@ -23,6 +23,7 @@ import landing8 from './images/landing8.jpg'
 import landing9 from './images/landing9.jpg'
 import logo from './images/logo.jpg'
 import mobiles from './images/mobiles.png'
+import privacyImage from './images/privacyImage.png'
 import bigCircle from './images/bigCircle.png'
 import oneMobile from './images/one-mobile.jpg'
 import partnerLanding1 from './images/partnersLanding1.jpg'
@@ -47,6 +48,7 @@ import smallLogo from './images/smallLogo.jpg'
 export const Images = {
     bigLogoIcon,
     line,
+    privacyImage,
     brownLogo,
     cancel,
     howItWorkImg,
@@ -68,7 +70,6 @@ export const Images = {
     landing6,
     landing7,
     landing8,
-    landing9,
     landing9,
     logo,
     mobiles,

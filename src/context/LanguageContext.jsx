@@ -36,9 +36,9 @@ export const LanguageProvider = ({ children }) => {
   <div
     className="fixed top-5 left-1/2 
                bg-white/70 backdrop-blur-xl border border-white/30 
-               text-[#3c1d00] text-sm md:text-md py-3 px-8 
+               text-[#3c1d00] w-[75%] md:w-[25%] text-sm md:text-md py-3 px-8 
                rounded-2xl shadow-[0_8px_20px_rgba(0,0,0,0.15)] 
-               flex items-center gap-3 z-[9999] animate-slideDown openSauceMedium"
+               flex items-center justify-center gap-3 z-[9999] animate-slideDown openSauceMedium"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
