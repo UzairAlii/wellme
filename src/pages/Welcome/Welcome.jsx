@@ -7,7 +7,7 @@ const WelcomePage = () => {
   const { trans } = useLanguage();
 
   return (
-    <div className='h-fit w-full flex flex-col items-center justify-center px-4 gap-10 md:px-5 mt-30 font-sans mb-10'>
+    <div className='h-fit w-full flex flex-col items-center justify-center px-4 gap-10 md:px-5 mt-30 font-sans mb-10 pt-20 pb-30'>
       
       {/* Logo Section */}
       <motion.img
@@ -28,7 +28,7 @@ const WelcomePage = () => {
         </h1>
 
         {/* Description Text */}
-        <div className="flex flex-col text-[#5c4a3e] text-base md:text-lg font-semibold openSauceRegular mt-16">
+        <div className="flex flex-col text-[#000] text-sm md:text-base font-medium openSauceRegular mt-16">
           <p>
             {trans.WelcomeStatus}
           </p>
