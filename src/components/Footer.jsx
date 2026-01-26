@@ -86,8 +86,8 @@ const Footer = () => {
       {/* Bottom copyright and links */}
       <div className="w-full max-w-6xl mx-auto text-[10px] lg:text-sm text-[#222] text-center mt-2 px-3 py-[7px] openSauceRegular">
         {trans.EndingFooterPara} | 
-        <a className='hover:underline' href="https://thewellnessmethod.com/#/privacy-policy" target='_blank'> {trans.PrivacyPolicy}</a> | 
-        <a className='hover:underline' href="https://thewellnessmethod.com/#/terms-and-conditions" target='_blank'> {trans.TermsAndConditions}</a> | 
+        <a className='hover:underline' href="https://thewellnessmethod.com/privacy-policy" target='_blank'> {trans.PrivacyPolicy}</a> | 
+        <a className='hover:underline' href="https://thewellnessmethod.com/terms-and-conditions" target='_blank'> {trans.TermsAndConditions}</a> | 
         <a className='hover:underline' href=""> {trans.Contact}</a> | 
         <a className='hover:underline' href="https://74e2-alan.systeme.io/assessment" target='_blank'> {trans.wellmeHealthAssessment}</a>
       </div>
