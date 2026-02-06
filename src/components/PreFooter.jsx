@@ -133,67 +133,87 @@ const PreFooter = ({
           </div>
         ) : (
           <form
-            onSubmit={onSubmit}
-            className="w-full max-w-3xl bg-white/40 backdrop-blur-lg p-6 md:p-10 rounded-[32px] shadow-2xl border border-white/50 flex flex-col gap-5"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="flex flex-col gap-2">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
-                    errors.name ? "border-red-400" : "border-transparent"
-                  }`}
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-                {errors.name && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.name}</span>}
-              </div>
+  onSubmit={onSubmit}
+  className="w-full max-w-3xl bg-white/40 backdrop-blur-lg p-6 md:p-10 rounded-[32px] shadow-2xl border border-white/50 flex flex-col gap-5"
+>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+    {/* Name Input */}
+    <div className="flex flex-col gap-2">
+      <motion.input
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
+          errors.name ? "border-red-400" : "border-transparent"
+        }`}
+        value={formData.name}
+        onChange={handleChange}
+      />
+      {errors.name && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.name}</span>}
+    </div>
 
-              <div className="flex flex-col gap-2">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
-                    errors.email ? "border-red-400" : "border-transparent"
-                  }`}
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-                {errors.email && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.email}</span>}
-              </div>
-            </div>
+    {/* Email Input */}
+    <div className="flex flex-col gap-2">
+      <motion.input
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+        viewport={{ once: true }}
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
+          errors.email ? "border-red-400" : "border-transparent"
+        }`}
+        value={formData.email}
+        onChange={handleChange}
+      />
+      {errors.email && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.email}</span>}
+    </div>
+  </div>
 
-            <div className="flex flex-col gap-2">
-              <textarea
-                name="message"
-                placeholder="How can we help you?"
-                rows="4"
-                className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all resize-none ${
-                  errors.message ? "border-red-400" : "border-transparent"
-                }`}
-                value={formData.message}
-                onChange={handleChange}
-              />
-              {errors.message && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.message}</span>}
-            </div>
+  {/* Message Textarea */}
+  <div className="flex flex-col gap-2">
+    <motion.textarea
+      initial={{ y: 40, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.4, duration: 0.8 }}
+      viewport={{ once: true }}
+      name="message"
+      placeholder="How can we help you?"
+      rows="4"
+      className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all resize-none ${
+        errors.message ? "border-red-400" : "border-transparent"
+      }`}
+      value={formData.message}
+      onChange={handleChange}
+    />
+    {errors.message && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.message}</span>}
+  </div>
 
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              type="submit"
-              disabled={isSubmitting}
-              className="mt-4 w-full md:w-fit self-center px-16 py-4 bg-[#c28347] text-white rounded-full font-bold shadow-xl hover:bg-[#b8773b] transition-all flex items-center justify-center gap-3 disabled:opacity-70"
-            >
-              {isSubmitting ? (
-                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-              ) : (
-                "Send Message"
-              )}
-            </motion.button>
-          </form>
+  {/* Submit Button */}
+  <motion.button
+    initial={{ y: 20, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ delay: 0.6, duration: 0.5 }}
+    viewport={{ once: true }}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    type="submit"
+    disabled={isSubmitting}
+    className="mt-4 w-full md:w-fit self-center px-16 py-4 bg-[#c28347] text-white rounded-full font-bold shadow-xl hover:bg-[#b8773b] transition-all flex items-center justify-center gap-3 disabled:opacity-70 cursor-pointer"
+  >
+    {isSubmitting ? (
+      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+    ) : (
+      "Send Message"
+    )}
+  </motion.button>
+</form>
         )}
       </div>
 
