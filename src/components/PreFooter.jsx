@@ -85,7 +85,7 @@ const PreFooter = ({
   const twoButtons = hasLeft && hasRight;
 
   return (
-    <div className="relative w-full flex items-center justify-center py-5 px-3 md:px-0">
+    <div id="contact-form" className="relative w-full flex items-center justify-center py-5 px-3 md:px-0">
       <div className="bg-[#c6d1ed]/40 rounded-[24px] w-[98%] mx-auto flex flex-col items-center justify-center py-28 px-4 shadow">
         <h2
           className="text-2xl lg:text-5xl font-bold text-[#3c1d00] text-center mb-4 tracking-wide mac"
@@ -134,71 +134,61 @@ const PreFooter = ({
         ) : (
           <form
             onSubmit={onSubmit}
-            className="gap-8 w-full md:w-1/2 flex items-center justify-center flex-col p-8 rounded-2xl shadow-lg bg-white/20"
+            className="w-full max-w-3xl bg-white/40 backdrop-blur-lg p-6 md:p-10 rounded-[32px] shadow-2xl border border-white/50 flex flex-col gap-5"
           >
-            <div className="flex md:flex-row flex-col items-center justify-center gap-6 w-full">
-              <div className="flex flex-col w-full gap-4">
-                <motion.input
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="flex flex-col gap-2">
+                <input
                   type="text"
                   name="name"
-                  placeholder="Name"
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition ${
-                    errors.name ? "border-red-500" : "border-[#00000098] openSauceMedium"
+                  placeholder="Your Name"
+                  className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
+                    errors.name ? "border-red-400" : "border-transparent"
                   }`}
-                  initial={{ y: 40, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 1 }}
                   value={formData.name}
                   onChange={handleChange}
                 />
-                {errors.name && <p className="text-red-500 text-sm -mt-2">{errors.name}</p>}
+                {errors.name && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.name}</span>}
               </div>
 
-              <div className="flex flex-col w-full gap-4">
-                <motion.input
+              <div className="flex flex-col gap-2">
+                <input
                   type="email"
                   name="email"
-                  placeholder="Email"
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition ${
-                    errors.email ? "border-red-500" : "border-[#00000098] openSauceMedium"
+                  placeholder="Email Address"
+                  className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all ${
+                    errors.email ? "border-red-400" : "border-transparent"
                   }`}
-                  initial={{ y: 40, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.3, duration: 1 }}
                   value={formData.email}
                   onChange={handleChange}
                 />
-                {errors.email && <p className="text-red-500 text-sm -mt-2">{errors.email}</p>}
+                {errors.email && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.email}</span>}
               </div>
             </div>
 
-            <div className="w-full mt-4">
-              <motion.textarea
+            <div className="flex flex-col gap-2">
+              <textarea
                 name="message"
-                placeholder="Message"
-                rows="5"
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-[1px] focus:ring-black transition resize-none ${
-                  errors.message ? "border-red-500" : "border-[#00000098] openSauceMedium"
+                placeholder="How can we help you?"
+                rows="4"
+                className={`w-full px-5 py-4 bg-white/80 border rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#c28347] transition-all resize-none ${
+                  errors.message ? "border-red-400" : "border-transparent"
                 }`}
-                initial={{ y: 40, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.9, duration: 1 }}
                 value={formData.message}
                 onChange={handleChange}
               />
-              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+              {errors.message && <span className="text-red-600 text-xs ml-2 font-semibold">{errors.message}</span>}
             </div>
 
             <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               type="submit"
               disabled={isSubmitting}
-              initial={{ y: 10, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.2, duration: 0.5 }}
-              className="px-12 py-3 cursor-pointer rounded-full text-black shadow-lg active:scale-95 transition-all text-sm lg:text-md w-fit self-center flex items-center justify-center gap-2 border-2 border-black openSauceMedium bg-white hover:bg-black hover:text-white"
+              className="mt-4 w-full md:w-fit self-center px-16 py-4 bg-[#c28347] text-white rounded-full font-bold shadow-xl hover:bg-[#b8773b] transition-all flex items-center justify-center gap-3 disabled:opacity-70"
             >
               {isSubmitting ? (
-                <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
               ) : (
                 "Send Message"
               )}

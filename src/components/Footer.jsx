@@ -8,17 +8,35 @@ const Footer = () => {
   const { trans } = useLanguage()
 
     const [scrollAfterNavigate, setScrollAfterNavigate] = useState(false)
+    const [scrollToContact, setScrollToContact] = useState(false);
   
   const location = useLocation()
   const navigate = useNavigate()
 
   useEffect(() => {
-      if (location.pathname === '/' && scrollAfterNavigate) {
-        const section = document.getElementById('forPartnersAndRestaurants')
-        if (section) section.scrollIntoView({ behavior: 'smooth' })
-        setScrollAfterNavigate(false)
-      }
-    }, [location.pathname, scrollAfterNavigate])
+    if (location.pathname === '/' && scrollAfterNavigate) {
+      const section = document.getElementById('forPartnersAndRestaurants');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+      setScrollAfterNavigate(false);
+    }
+
+    if (location.pathname === '/About' && scrollToContact) {
+      const section = document.getElementById('contact-form');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+      setScrollToContact(false);
+    }
+  }, [location.pathname, scrollAfterNavigate, scrollToContact]);
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/About') {
+      const section = document.getElementById('contact-form');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      setScrollToContact(true);
+      navigate('/About');
+    }
+  };
   
     const handleGetStarted = () => {
       if (location.pathname === '/Partners') {
@@ -84,13 +102,36 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom copyright and links */}
-      <div className="w-full max-w-6xl mx-auto text-[10px] lg:text-sm text-[#222] text-center mt-2 px-3 py-[7px] openSauceRegular">
-        {trans.EndingFooterPara} | 
-        <a className='hover:underline' href="https://thewellnessmethod.com/privacy-policy" target='_blank'> {trans.PrivacyPolicy}</a> | 
-        <a className='hover:underline' href="https://thewellnessmethod.com/terms-and-conditions" target='_blank'> {trans.TermsAndConditions}</a> | 
-        <a className='hover:underline' href=""> {trans.Contact}</a> | 
-        <a className='hover:underline' href="https://74e2-alan.systeme.io/assessment" target='_blank'> {trans.wellmeHealthAssessment}</a>
-      </div>
+<div className="w-full max-w-7xl mx-auto text-[10px] lg:text-sm text-[#222] mt-2 px-3 py-[7px] openSauceRegular">
+  <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1">
+    
+    <span>{trans.EndingFooterPara}</span>
+    <span className="text-gray-400">|</span>
+
+    <a className="hover:underline" href="https://thewellnessmethod.com/privacy-policy" target="_blank">
+      {trans.PrivacyPolicy}
+    </a>
+    <span className="text-gray-400">|</span>
+
+    <a className="hover:underline" href="https://thewellnessmethod.com/terms-and-conditions" target="_blank">
+      {trans.TermsAndConditions}
+    </a>
+    <span className="text-gray-400">|</span>
+
+    <button 
+      onClick={handleContactClick} 
+      className="hover:underline cursor-pointer bg-transparent border-none p-0"
+    > 
+      {trans.Contact}
+    </button>
+    <span className="text-gray-400">|</span>
+
+    <a className="hover:underline" href="https://74e2-alan.systeme.io/assessment" target="_blank">
+      {trans.wellmeHealthAssessment}
+    </a>
+
+  </div>
+</div>
     </footer>
   )
 }
