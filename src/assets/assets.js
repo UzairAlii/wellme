@@ -38,11 +38,14 @@ import restlanding3 from './images/restlanding3.jpg'
 import restlanding4 from './images/restlanding4.jpg'
 import restlanding5 from './images/restlanding5.jpg'
 import smallLogo from './images/smallLogo.jpg'
+import wellme from './videos/wellme.mp4'
 
 
 
 
-
+export const videos = {
+    wellme
+}
 
 
 export const Images = {

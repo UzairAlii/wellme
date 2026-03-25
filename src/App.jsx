@@ -12,6 +12,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Welcome from './pages/Welcome/Welcome'
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy/PP'
+import Video from './pages/Video'
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/Welcome' element={<Welcome />} />
         <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/demo' element={<Video />} />
       </Routes>
       <Footer />
 
